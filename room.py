@@ -17,4 +17,15 @@ class Room:
 
     def get_exits(self):
         return self.exits
+    
+    def get_json(self):
+        return {
+            "id": self.id,
+            "title": self.title,
+            "description": self.description,
+            "coordinates": self.coordinates,
+            "exits": self.exits,
+            "elevation": self.elevation,
+            "terrain": self.terrain
+        }
 
