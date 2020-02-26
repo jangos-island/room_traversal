@@ -1,6 +1,7 @@
 import requests
 import random
 from datetime import datetime
+import json
 
 from player import Player
 from room import Room
@@ -14,15 +15,18 @@ def record_move(rooms, to_room, from_room=None, direction=None):
     if to_room.id not in rooms:
         new_room = {
             "directions": {"n": None, "s": None, "w": None, "e": None},
-            "room": to_room,
+            "room": to_room.get_json(),
         }
         for exit in to_room.exits:
             new_room["directions"][exit] = "?"
         rooms[to_room.id] = new_room
-    if from_room is not None:
-        rooms[from_room.id]["directions"][direction] = to_room.id
-        rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
+        
+        if from_room is not None:
+            rooms[from_room.id]["directions"][direction] = to_room.id
+            rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
 
+        with open('room.txt', 'w') as outfile:
+            json.dump(rooms, outfile, sort_keys=True)
 
 def get_directions_to_unseen_room(rooms, current_room):
     seen = set([current_room.id])
@@ -91,31 +95,33 @@ if __name__ == "__main__":
     # TODO: persist game state in a text file and load upon init
     game_state = {
         "last_call": datetime.now(),
-        "cooldown": 0,
+        "cooldown": 15,
         "errors": None,
         "messages": None,
     }
 
     # Rooms
-    # TODO: persist room in a text file and load rooms from it
-    rooms = {}
+    rooms = None
+    with open("room.txt") as json_file:
+        rooms = json.load(json_file)
 
-    if len(rooms.keys()) == 0:
+    if len(rooms.keys()) != 0:
+        print(f"There are already {len(rooms)} visited rooms")
+        
+    # Test API - initialize room
+    response = debounce(game_init, game_state)
 
-        # Test API - initialize room
-        response = debounce(game_init, game_state)
+    room = Room(response)
+    print(f"Current room: {room}")
+    player.play(room)
+    record_move(rooms, room)
 
-        room = Room(response)
-        print(f"Current room: {room}")
-        player.play(room)
-        record_move(rooms, room)
-
-        # check for items
-        for item in response["items"]:
-            print("item: ", item)
-            response = debounce(examine, game_state, {"name": item})
-            response = debounce(pick_item, game_state, {"name": item})
-            response = debounce(check_status, game_state)
+    # check for items
+    for item in response["items"]:
+        print("item: ", item)
+        response = debounce(examine, game_state, {"name": item})
+        response = debounce(pick_item, game_state, {"name": item})
+        response = debounce(check_status, game_state)
 
     print(f"Please choose running mode:")
     print(f"1 - automatic traversal")
