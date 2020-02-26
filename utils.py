@@ -5,7 +5,7 @@ import time
 def debounce(callback, game_state, params={}):
     time_now = datetime.now()
     elapsed_time = time_now - game_state["last_call"]
-    cooldown = max(15, game_state["cooldown"])
+    cooldown = game_state["cooldown"]
 
     if elapsed_time.seconds < cooldown:
         delay = cooldown - elapsed_time.seconds
