@@ -17,12 +17,13 @@ expected_room_response = [
     "cooldown",
     "errors",
     "messages",
+    "items",
 ]
 API_KEY = os.getenv("API_KEY")
 headers = {"Authorization": f"Token {API_KEY}"}
 
 
-def game_init():
+def game_init(**kwargs):
     response = requests.get(url=base_url + "/init", headers=headers).json()
 
     if all([key in response for key in expected_room_response]):
@@ -32,17 +33,70 @@ def game_init():
         raise Exception(response)
 
 
-def explore_new_room(direction, room_id=None):
-    payload = {"direction": direction}
-    if room_id is not None and room_id != "?":
-        payload["next_room_id"] = str(room_id)
-    json_payload = json.dumps(payload)
+# direction, room_id=None
+def explore_room(**payload):
+    required = ["direction", "room_id"]
 
-    response = requests.post(
-        url=base_url + "/move", headers=headers, data=json_payload
-    ).json()
-    if all([key in response for key in expected_room_response]):
+    if not all([key in required for key in payload]):
+        print(payload)
+        raise
+
+    data = {"direction": payload["direction"]}
+    if payload["room_id"] is not None and payload["room_id"] != "?":
+        payload["next_room_id"] = str(payload["room_id"])
+
+    try:
+        data_payload = json.dumps(data)
+
+        response = requests.post(
+            url=base_url + "/move", headers=headers, data=data_payload
+        ).json()
+
+        if all([key in response for key in expected_room_response]):
+            return response
+        else:
+            print(response)
+            raise Exception(response)
+    except Exception:
+        raise
+
+
+# item_name
+def pick_item(**payload):
+    if "name" not in payload:
+        raise
+    data = {"name": payload["name"]}
+    try:
+        data_payload = json.dumps(data)
+
+        response = requests.post(
+            url=base_url + "/take", headers=headers, data=data_payload
+        ).json()
         return response
-    else:
-        print(response)
-        raise Exception(response)
+    except Exception:
+        raise
+
+
+# name
+def examine(**payload):
+    if "name" not in payload:
+        raise
+    data = {"name": payload["name"]}
+
+    try:
+        data_payload = json.dumps(data)
+
+        response = requests.post(
+            url=base_url + "/examine", headers=headers, data=data_payload
+        ).json()
+        return response
+    except Exception:
+        raise
+
+
+def check_status(**payload):
+    try:
+        response = requests.post(url=base_url + "/status", headers=headers).json()
+        return response
+    except Exception:
+        raise
