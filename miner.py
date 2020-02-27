@@ -17,24 +17,15 @@ load_dotenv()
 
 
 def proof_of_work(data):
-    """
-    Multi-Ouroboros of Work Algorithm
-    - Find a number p' such that the last six digits of hash(p) are equal
-    to the first six digits of hash(p')
-    - IE:  last_hash: ...AE9123456, new hash 123456888...
-    - p is the previous proof, and p' is the new proof
-    - Use the same method to generate SHA-256 hashes as the examples in class
-    """
 
     start = timer()
 
     print("Searching for next proof")
 
-
     last_proof = data["proof"]
     difficulty = data["difficulty"]
     # start at a random point
-    proof = last_proof* random.randint(0, 100)
+    proof = last_proof * random.randint(0, 100)
 
     valid_proof(last_proof, difficulty, proof)
     # while valid_proof(last_proof, difficulty, proof) is False:
@@ -45,13 +36,6 @@ def proof_of_work(data):
 
 
 def valid_proof(last_proof, difficulty, proof):
-    """
-    Validates the Proof:  Multi-ouroborus:  Do the last six characters of
-    the hash of the last proof match the first six characters of the hash
-    of the new proof?
-
-    IE:  last_hash: ...AE9123456, new hash 123456E88...
-    """
     # hash the last_proof and the attempted proof together
     # then check to see if it has the required zeros
 
@@ -63,11 +47,7 @@ def valid_proof(last_proof, difficulty, proof):
     return guess_hash[:difficulty] == zeros
 
 if __name__ == '__main__':
-    # What node are we interacting with?
-    if len(sys.argv) > 1:
-        node = sys.argv[1]
-    else:
-        node = "https://lambda-treasure-hunt.herokuapp.com/api/bc"
+    node = "https://lambda-treasure-hunt.herokuapp.com/api/bc"
 
     coins_mined = 0
     API_KEY = os.getenv("API_KEY")
@@ -78,7 +58,6 @@ if __name__ == '__main__':
         # Get the last proof from the server
         r = requests.get(url=node + "/last_proof", headers=headers)
         data = r.json()
-        # first i can get all the data i need
 
         new_proof = proof_of_work(data)
 
