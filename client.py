@@ -21,9 +21,16 @@ def record_move(rooms, to_room, from_room=None, direction=None):
             new_room["directions"][exit] = "?"
         rooms[to_room.id] = new_room
         
-        if from_room is not None:
-            rooms[from_room.id]["directions"][direction] = to_room.id
-            rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
+        # if from_room is not None:
+        #     rooms[from_room.id]["directions"][direction] = to_room.id
+        #     rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
+
+        # with open('room.txt', 'w') as outfile:
+        #     json.dump(rooms, outfile, sort_keys=True, indent=2)
+    
+    if from_room is not None and rooms[from_room.id]["directions"][direction] == '?':
+        rooms[from_room.id]["directions"][direction] = to_room.id
+        rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
 
         with open('room.txt', 'w') as outfile:
             json.dump(rooms, outfile, sort_keys=True, indent=2)
@@ -44,7 +51,6 @@ def get_directions_to_unseen_room(rooms, current_room):
         current = exits.pop()
         if current["direction"][1] == "?":
             current["path"].append(current["direction"])
-            print(current["path"])
             return current["path"]
         else:
             seen.add(current["direction"][1])
@@ -62,10 +68,11 @@ def traverse(rooms, player, game_state):
 
     while len(rooms.keys()) != 500:
         directions = get_directions_to_unseen_room(rooms, player.current_room)
+        print(f"\n*** Room count: {len(rooms)}")
+        print(f"Path length: {len(directions)}")
+        path_count = len(directions)
 
         for direction in directions:
-            print(f"Room count: {len(rooms)}")
-
             current_room = player.current_room
             response = debounce(
                 explore_room,
@@ -74,7 +81,8 @@ def traverse(rooms, player, game_state):
             )
 
             room = Room(response)
-            print(f"Current room: {room}")
+            print(f"{path_count} - Current room: {room}")
+            path_count -= 1
             player.travel(room)
             record_move(rooms, room, current_room, direction[0])
 
