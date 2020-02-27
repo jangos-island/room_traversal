@@ -30,11 +30,10 @@ def proof_of_work(data):
     # start at a random point
     proof = last_proof * random.randint(0, 100)
 
-    valid_proof(last_proof, difficulty, proof)
-    # while valid_proof(last_proof, difficulty, proof) is False:
-    #     proof += 1
+    while valid_proof(last_proof, difficulty, proof) is False:
+        proof += 1
 
-    # print("Proof found: " + str(proof) + " in " + str(timer() - start))
+    print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
 
 
@@ -46,8 +45,11 @@ def valid_proof(last_proof, difficulty, proof):
 
     guess = f'{last_proof}{proof}'.encode()
     guess_hash = hashlib.sha256(guess).hexdigest()
-    print(guess_hash)
-    return guess_hash[:difficulty] == zeros
+
+    if guess_hash[:difficulty] == zeros:
+        print(guess_hash)
+        return True
+    return False
 
 if __name__ == '__main__':
     node = "https://lambda-treasure-hunt.herokuapp.com/api/bc"
@@ -62,19 +64,23 @@ if __name__ == '__main__':
         r = requests.get(url=node + "/last_proof", headers=headers)
         data = r.json()
 
-        # sleep for 1 second
+        # need to sleep for 1 second after hitting last proof endpoint
+        print('sleeping 1 sec')
         time.sleep(1)
 
         new_proof = proof_of_work(data)
 
-        break
-
         post_data = {"proof": new_proof}
 
-        r = requests.post(url=node + "/mine", json=post_data)
+        r = requests.post(url=node + "/mine", json=post_data, headers=headers)
         data = r.json()
-        if data.get('message') == 'New Block Forged':
-            coins_mined += 1
-            print("Total coins mined: " + str(coins_mined))
-        else:
-            print(data.get('message'))
+        print(data)
+        # if data.get('message') == 'New Block Forged':
+        #     coins_mined += 1
+        #     print("Total coins mined: " + str(coins_mined))
+        # else:
+        #     print(data.get('message'))
+
+        # will change this to 15 seconds once we get our names
+        print('sleeping 45 sec')
+        time.sleep(45)
