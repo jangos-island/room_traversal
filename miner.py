@@ -73,15 +73,6 @@ if __name__ == '__main__':
     API_KEY = os.getenv("API_KEY")
     headers = {"Authorization": f"Token {API_KEY}"}
 
-    # Load or create ID
-    f = open("my_id.txt", "r")
-    id = f.read()
-    print("ID is", id)
-    f.close()
-
-    if id == 'NONAME\n':
-        print("ERROR: You must change your name in `my_id.txt`!")
-        exit()
     # Run forever until interrupted
     while True:
         # Get the last proof from the server
