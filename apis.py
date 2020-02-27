@@ -43,7 +43,7 @@ def explore_room(**payload):
 
     data = {"direction": payload["direction"]}
     if payload["room_id"] is not None and payload["room_id"] != "?":
-        payload["next_room_id"] = str(payload["room_id"])
+        data["next_room_id"] = str(payload["room_id"])
 
     try:
         data_payload = json.dumps(data)
