@@ -26,7 +26,7 @@ def record_move(rooms, to_room, from_room=None, direction=None):
             rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
 
         with open('room.txt', 'w') as outfile:
-            json.dump(rooms, outfile, sort_keys=True)
+            json.dump(rooms, outfile, sort_keys=True, indent=2)
         
 
 def get_directions_to_unseen_room(rooms, current_room):
