@@ -1,5 +1,3 @@
-# NOTE:
-# currently only runs proof_of_work algo a single time
 import hashlib
 import requests
 import json
@@ -81,6 +79,7 @@ if __name__ == '__main__':
         # else:
         #     print(data.get('message'))
 
+        # cooldown after hitting /mine endpoint
         # will change this to 15 seconds once we get our names
         print('sleeping 45 sec')
         time.sleep(45)
