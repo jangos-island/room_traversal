@@ -2,6 +2,7 @@ import requests
 import random
 from datetime import datetime
 import json
+from collections import deque
 
 from player import Player
 from room import Room
@@ -38,17 +39,19 @@ def record_move(rooms, to_room, from_room=None, direction=None):
 
 def get_directions_to_unseen_room(rooms, current_room):
     seen = set([current_room.id])
-    exits = [
+    exits_list = [
         {"direction": exit, "path": []}
         for exit in rooms[current_room.id]["directions"].items()
         if exit[1] is not None and exit[1] not in seen
     ]
 
     random.seed(random.randint(0, 100))
-    random.shuffle(exits)
+    random.shuffle(exits_list)
+
+    exits = deque(exits_list)
 
     while len(exits) > 0:
-        current = exits.pop()
+        current = exits.popleft()
         if current["direction"][1] == "?":
             current["path"].append(current["direction"])
             return current["path"]
@@ -61,13 +64,17 @@ def get_directions_to_unseen_room(rooms, current_room):
             ]
             random.seed(0, 100)
             random.shuffle(next_exits)
-            exits = exits + next_exits
+            exits.extend(next_exits)
+    return []
 
 
 def traverse(rooms, player, game_state):
 
-    while len(rooms.keys()) != 500:
+    while True:
         directions = get_directions_to_unseen_room(rooms, player.current_room)
+        if len(directions) == 0:
+            break
+        
         print(f"\n*** Room count: {len(rooms)}")
         print(f"Path length: {len(directions)}")
         path_count = len(directions)
