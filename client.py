@@ -26,8 +26,8 @@ def record_move(rooms, to_room, from_room=None, direction=None):
             rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
 
         with open('room.txt', 'w') as outfile:
-            # print(json.dumps(rooms))
             json.dump(rooms, outfile, sort_keys=True)
+        
 
 def get_directions_to_unseen_room(rooms, current_room):
     seen = set([current_room.id])
@@ -44,6 +44,7 @@ def get_directions_to_unseen_room(rooms, current_room):
         current = exits.pop()
         if current["direction"][1] == "?":
             current["path"].append(current["direction"])
+            print(current["path"])
             return current["path"]
         else:
             seen.add(current["direction"][1])
