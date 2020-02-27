@@ -5,6 +5,7 @@ import requests
 import json
 import random
 import sys
+import time
 
 from uuid import uuid4
 
@@ -60,6 +61,9 @@ if __name__ == '__main__':
         # Get the last proof from the server
         r = requests.get(url=node + "/last_proof", headers=headers)
         data = r.json()
+
+        # sleep for 1 second
+        time.sleep(1)
 
         new_proof = proof_of_work(data)
 
