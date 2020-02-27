@@ -26,6 +26,7 @@ def record_move(rooms, to_room, from_room=None, direction=None):
             rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
 
         with open('room.txt', 'w') as outfile:
+            # print(json.dumps(rooms))
             json.dump(rooms, outfile, sort_keys=True)
 
 def get_directions_to_unseen_room(rooms, current_room):
@@ -77,14 +78,14 @@ def traverse(rooms, player, game_state):
             record_move(rooms, room, current_room, direction[0])
 
             # check for items
-            for item in response["items"]:
-                print("item: ", item)
-                response = debounce(examine, game_state, {"name": item})
-                response = debounce(pick_item, game_state, {"name": item})
-                response = debounce(check_status, game_state)
+            # for item in response["items"]:
+            #     print("item: ", item)
+            #     response = debounce(examine, game_state, {"name": item})
+            #     response = debounce(pick_item, game_state, {"name": item})
+            #     response = debounce(check_status, game_state)
 
-            print(game_state)
-            print("------\n")
+            # print(game_state)
+            # print("------\n")
 
 
 if __name__ == "__main__":
@@ -101,9 +102,13 @@ if __name__ == "__main__":
     }
 
     # Rooms
-    rooms = None
+    loaded_rooms = None
     with open("room.txt") as json_file:
-        rooms = json.load(json_file)
+        loaded_rooms = json.load(json_file)
+    
+    rooms = {}
+    for key, room in loaded_rooms.items():
+        rooms[int(key)] = room
 
     if len(rooms.keys()) != 0:
         print(f"There are already {len(rooms)} visited rooms")
@@ -117,11 +122,11 @@ if __name__ == "__main__":
     record_move(rooms, room)
 
     # check for items
-    for item in response["items"]:
-        print("item: ", item)
-        response = debounce(examine, game_state, {"name": item})
-        response = debounce(pick_item, game_state, {"name": item})
-        response = debounce(check_status, game_state)
+    # for item in response["items"]:
+    #     print("item: ", item)
+    #     response = debounce(examine, game_state, {"name": item})
+    #     response = debounce(pick_item, game_state, {"name": item})
+    #     response = debounce(check_status, game_state)
 
     print(f"Please choose running mode:")
     print(f"1 - automatic traversal")
