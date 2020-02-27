@@ -1,3 +1,5 @@
+# NOTE:
+# currently only runs proof_of_work algo a single time
 import hashlib
 import requests
 import json
@@ -31,7 +33,7 @@ def proof_of_work(data):
     # while valid_proof(last_proof, difficulty, proof) is False:
     #     proof += 1
 
-    print("Proof found: " + str(proof) + " in " + str(timer() - start))
+    # print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
 
 
