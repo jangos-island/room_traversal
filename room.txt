@@ -1,5 +1,2467 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {"18": {"directions": {"e": null, "n": "?", "s": 22, "w": "?"}, "room": {"coordinates": "(61,56)", "description": "You are on the side of a steep incline.", "elevation": 4, "exits": ["n", "s", "w"], "id": 18, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "22": {"directions": {"e": null, "n": 18, "s": 78, "w": 36}, "room": {"coordinates": "(61,55)", "description": "You are standing at the zenith of Mt. Holloway. You see before you a holy shrine erected in the image of a magnificent winged deity.", "elevation": 5, "exits": ["n", "s", "w"], "id": 22, "terrain": "MOUNTAIN", "title": "The Peak of Mt. Holloway"}}, "36": {"directions": {"e": 22, "n": null, "s": 48, "w": 60}, "room": {"coordinates": "(60,55)", "description": "You are on the side of a steep incline.", "elevation": 4, "exits": ["s", "e", "w"], "id": 36, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "45": {"directions": {"e": null, "n": "?", "s": 60, "w": null}, "room": {"coordinates": "(59,56)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["n", "s"], "id": 45, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "48": {"directions": {"e": null, "n": 36, "s": 105, "w": 149}, "room": {"coordinates": "(60,54)", "description": "You are on the side of a steep incline.", "elevation": 3, "exits": ["n", "s", "w"], "id": 48, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "60": {"directions": {"e": 36, "n": 45, "s": null, "w": 70}, "room": {"coordinates": "(59,55)", "description": "You are on the side of a steep incline.", "elevation": 3, "exits": ["n", "e", "w"], "id": 60, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "70": {"directions": {"e": 60, "n": null, "s": 163, "w": 98}, "room": {"coordinates": "(58,55)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["s", "e", "w"], "id": 70, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "78": {"directions": {"e": null, "n": 22, "s": 108, "w": null}, "room": {"coordinates": "(61,54)", "description": "You are on the side of a steep incline.", "elevation": 4, "exits": ["n", "s"], "id": 78, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "98": {"directions": {"e": 70, "n": 102, "s": 126, "w": 109}, "room": {"coordinates": "(57,55)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["n", "s", "e", "w"], "id": 98, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "102": {"directions": {"e": null, "n": null, "s": 98, "w": 142}, "room": {"coordinates": "(57,56)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 102, "terrain": "NORMAL", "title": "A misty room"}}, "105": {"directions": {"e": null, "n": 48, "s": null, "w": 202}, "room": {"coordinates": "(60,53)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["n", "w"], "id": 105, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "108": {"directions": {"e": "?", "n": 78, "s": 117, "w": null}, "room": {"coordinates": "(61,53)", "description": "You are on the side of a steep incline.", "elevation": 3, "exits": ["n", "s", "e"], "id": 108, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "109": {"directions": {"e": 98, "n": null, "s": "?", "w": 175}, "room": {"coordinates": "(56,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 109, "terrain": "NORMAL", "title": "A misty room"}}, "117": {"directions": {"e": "?", "n": 108, "s": 131, "w": 133}, "room": {"coordinates": "(61,52)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["n", "s", "e", "w"], "id": 117, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "126": {"directions": {"e": null, "n": 98, "s": 129, "w": null}, "room": {"coordinates": "(57,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 126, "terrain": "NORMAL", "title": "A misty room"}}, "129": {"directions": {"e": 194, "n": 126, "s": null, "w": 170}, "room": {"coordinates": "(57,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e", "w"], "id": 129, "terrain": "NORMAL", "title": "A misty room"}}, "131": {"directions": {"e": null, "n": 117, "s": 244, "w": 138}, "room": {"coordinates": "(61,51)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["n", "s", "w"], "id": 131, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "133": {"directions": {"e": 117, "n": null, "s": null, "w": 173}, "room": {"coordinates": "(60,52)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["e", "w"], "id": 133, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "138": {"directions": {"e": 131, "n": null, "s": 211, "w": 195}, "room": {"coordinates": "(60,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 138, "terrain": "NORMAL", "title": "A misty room"}}, "142": {"directions": {"e": 102, "n": null, "s": null, "w": 159}, "room": {"coordinates": "(56,56)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 142, "terrain": "NORMAL", "title": "A misty room"}}, "149": {"directions": {"e": 48, "n": null, "s": null, "w": null}, "room": {"coordinates": "(59,54)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["e"], "id": 149, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "159": {"directions": {"e": 142, "n": null, "s": null, "w": 196}, "room": {"coordinates": "(55,56)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 159, "terrain": "NORMAL", "title": "A misty room"}}, "163": {"directions": {"e": null, "n": 70, "s": null, "w": null}, "room": {"coordinates": "(58,54)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["n"], "id": 163, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "166": {"directions": {"e": "?", "n": null, "s": 198, "w": "?"}, "room": {"coordinates": "(62,52)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["s", "e", "w"], "id": 166, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "170": {"directions": {"e": 129, "n": null, "s": null, "w": null}, "room": {"coordinates": "(56,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e"], "id": 170, "terrain": "NORMAL", "title": "A misty room"}}, "173": {"directions": {"e": 133, "n": null, "s": null, "w": 214}, "room": {"coordinates": "(59,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 173, "terrain": "NORMAL", "title": "A misty room"}}, "175": {"directions": {"e": 109, "n": null, "s": 183, "w": 179}, "room": {"coordinates": "(55,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 175, "terrain": "NORMAL", "title": "A misty room"}}, "179": {"directions": {"e": 175, "n": null, "s": 233, "w": "?"}, "room": {"coordinates": "(54,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 179, "terrain": "NORMAL", "title": "A misty room"}}, "183": {"directions": {"e": null, "n": 175, "s": 229, "w": null}, "room": {"coordinates": "(55,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 183, "terrain": "NORMAL", "title": "A misty room"}}, "194": {"directions": {"e": null, "n": null, "s": 214, "w": 129}, "room": {"coordinates": "(58,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 194, "terrain": "NORMAL", "title": "A misty room"}}, "195": {"directions": {"e": 138, "n": null, "s": 228, "w": 225}, "room": {"coordinates": "(59,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 195, "terrain": "NORMAL", "title": "A misty room"}}, "196": {"directions": {"e": 159, "n": 222, "s": null, "w": "?"}, "room": {"coordinates": "(54,56)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e", "w"], "id": 196, "terrain": "NORMAL", "title": "A misty room"}}, "198": {"directions": {"e": 199, "n": 166, "s": 239, "w": null}, "room": {"coordinates": "(62,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 198, "terrain": "NORMAL", "title": "A misty room"}}, "199": {"directions": {"e": null, "n": null, "s": 230, "w": 198}, "room": {"coordinates": "(63,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 199, "terrain": "NORMAL", "title": "A misty room"}}, "202": {"directions": {"e": 105, "n": null, "s": null, "w": null}, "room": {"coordinates": "(59,53)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["e"], "id": 202, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "211": {"directions": {"e": null, "n": 138, "s": null, "w": null}, "room": {"coordinates": "(60,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 211, "terrain": "NORMAL", "title": "A misty room"}}, "214": {"directions": {"e": 173, "n": 194, "s": null, "w": 226}, "room": {"coordinates": "(58,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e", "w"], "id": 214, "terrain": "NORMAL", "title": "A misty room"}}, "222": {"directions": {"e": null, "n": 305, "s": 196, "w": null}, "room": {"coordinates": "(54,57)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 222, "terrain": "NORMAL", "title": "A misty room"}}, "225": {"directions": {"e": 195, "n": null, "s": 278, "w": null}, "room": {"coordinates": "(58,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 225, "terrain": "NORMAL", "title": "A misty room"}}, "226": {"directions": {"e": 214, "n": null, "s": 300, "w": null}, "room": {"coordinates": "(57,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 226, "terrain": "NORMAL", "title": "A misty room"}}, "228": {"directions": {"e": null, "n": 195, "s": 281, "w": null}, "room": {"coordinates": "(59,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 228, "terrain": "NORMAL", "title": "A misty room"}}, "229": {"directions": {"e": null, "n": 183, "s": 250, "w": 236}, "room": {"coordinates": "(55,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "w"], "id": 229, "terrain": "NORMAL", "title": "A misty room"}}, "230": {"directions": {"e": 297, "n": 199, "s": 307, "w": null}, "room": {"coordinates": "(63,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 230, "terrain": "NORMAL", "title": "A misty room"}}, "233": {"directions": {"e": null, "n": 179, "s": null, "w": 238}, "room": {"coordinates": "(54,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "w"], "id": 233, "terrain": "NORMAL", "title": "A misty room"}}, "236": {"directions": {"e": 229, "n": null, "s": 264, "w": null}, "room": {"coordinates": "(54,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 236, "terrain": "NORMAL", "title": "A misty room"}}, "238": {"directions": {"e": 233, "n": null, "s": null, "w": null}, "room": {"coordinates": "(53,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e"], "id": 238, "terrain": "NORMAL", "title": "A misty room"}}, "239": {"directions": {"e": null, "n": 198, "s": null, "w": 244}, "room": {"coordinates": "(62,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "w"], "id": 239, "terrain": "NORMAL", "title": "A misty room"}}, "244": {"directions": {"e": 239, "n": 131, "s": null, "w": null}, "room": {"coordinates": "(61,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e"], "id": 244, "terrain": "NORMAL", "title": "A misty room"}}, "250": {"directions": {"e": "?", "n": 229, "s": "?", "w": null}, "room": {"coordinates": "(55,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 250, "terrain": "NORMAL", "title": "A misty room"}}, "264": {"directions": {"e": null, "n": 236, "s": 274, "w": 273}, "room": {"coordinates": "(54,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "w"], "id": 264, "terrain": "NORMAL", "title": "A misty room"}}, "273": {"directions": {"e": 264, "n": 343, "s": null, "w": null}, "room": {"coordinates": "(53,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e"], "id": 273, "terrain": "NORMAL", "title": "A misty room"}}, "274": {"directions": {"e": null, "n": 264, "s": null, "w": 308}, "room": {"coordinates": "(54,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "w"], "id": 274, "terrain": "NORMAL", "title": "A misty room"}}, "278": {"directions": {"e": null, "n": 225, "s": null, "w": null}, "room": {"coordinates": "(58,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 278, "terrain": "NORMAL", "title": "A misty room"}}, "281": {"directions": {"e": 309, "n": 228, "s": 318, "w": 317}, "room": {"coordinates": "(59,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e", "w"], "id": 281, "terrain": "NORMAL", "title": "A misty room"}}, "297": {"directions": {"e": null, "n": null, "s": null, "w": 230}, "room": {"coordinates": "(64,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 297, "terrain": "NORMAL", "title": "A misty room"}}, "300": {"directions": {"e": null, "n": 226, "s": 377, "w": 389}, "room": {"coordinates": "(57,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "w"], "id": 300, "terrain": "NORMAL", "title": "A misty room"}}, "305": {"directions": {"e": null, "n": "?", "s": 222, "w": null}, "room": {"coordinates": "(54,58)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 305, "terrain": "NORMAL", "title": "A misty room"}}, "307": {"directions": {"e": 371, "n": 230, "s": 373, "w": 321}, "room": {"coordinates": "(63,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e", "w"], "id": 307, "terrain": "NORMAL", "title": "A misty room"}}, "308": {"directions": {"e": 274, "n": null, "s": null, "w": null}, "room": {"coordinates": "(53,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e"], "id": 308, "terrain": "NORMAL", "title": "A misty room"}}, "309": {"directions": {"e": 326, "n": null, "s": 333, "w": 281}, "room": {"coordinates": "(60,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 309, "terrain": "NORMAL", "title": "A misty room"}}, "317": {"directions": {"e": 281, "n": null, "s": 387, "w": 409}, "room": {"coordinates": "(58,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 317, "terrain": "NORMAL", "title": "A misty room"}}, "318": {"directions": {"e": null, "n": 281, "s": 487, "w": null}, "room": {"coordinates": "(59,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 318, "terrain": "NORMAL", "title": "A misty room"}}, "321": {"directions": {"e": 307, "n": null, "s": 413, "w": null}, "room": {"coordinates": "(62,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 321, "terrain": "NORMAL", "title": "A misty room"}}, "326": {"directions": {"e": null, "n": null, "s": 342, "w": 309}, "room": {"coordinates": "(61,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 326, "terrain": "NORMAL", "title": "A misty room"}}, "333": {"directions": {"e": null, "n": 309, "s": 378, "w": null}, "room": {"coordinates": "(60,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 333, "terrain": "NORMAL", "title": "A misty room"}}, "342": {"directions": {"e": null, "n": 326, "s": 432, "w": null}, "room": {"coordinates": "(61,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 342, "terrain": "NORMAL", "title": "A misty room"}}, "343": {"directions": {"e": null, "n": null, "s": 273, "w": 351}, "room": {"coordinates": "(53,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 343, "terrain": "NORMAL", "title": "A misty room"}}, "351": {"directions": {"e": 343, "n": null, "s": 491, "w": "?"}, "room": {"coordinates": "(52,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 351, "terrain": "NORMAL", "title": "A misty room"}}, "371": {"directions": {"e": null, "n": null, "s": 475, "w": 307}, "room": {"coordinates": "(64,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 371, "terrain": "NORMAL", "title": "A misty room"}}, "373": {"directions": {"e": null, "n": 307, "s": 480, "w": null}, "room": {"coordinates": "(63,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 373, "terrain": "NORMAL", "title": "A misty room"}}, "377": {"directions": {"e": null, "n": 300, "s": null, "w": null}, "room": {"coordinates": "(57,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 377, "terrain": "NORMAL", "title": "A misty room"}}, "378": {"directions": {"e": null, "n": 333, "s": null, "w": null}, "room": {"coordinates": "(60,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 378, "terrain": "NORMAL", "title": "A misty room"}}, "387": {"directions": {"e": null, "n": 317, "s": 417, "w": 431}, "room": {"coordinates": "(58,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "w"], "id": 387, "terrain": "NORMAL", "title": "A misty room"}}, "389": {"directions": {"e": 300, "n": null, "s": null, "w": null}, "room": {"coordinates": "(56,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e"], "id": 389, "terrain": "NORMAL", "title": "A misty room"}}, "409": {"directions": {"e": 317, "n": null, "s": null, "w": null}, "room": {"coordinates": "(57,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e"], "id": 409, "terrain": "NORMAL", "title": "A misty room"}}, "413": {"directions": {"e": null, "n": 321, "s": null, "w": null}, "room": {"coordinates": "(62,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 413, "terrain": "NORMAL", "title": "A misty room"}}, "417": {"directions": {"e": null, "n": 387, "s": null, "w": null}, "room": {"coordinates": "(58,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 417, "terrain": "NORMAL", "title": "A misty room"}}, "431": {"directions": {"e": 387, "n": null, "s": null, "w": 492}, "room": {"coordinates": "(57,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 431, "terrain": "NORMAL", "title": "A misty room"}}, "432": {"directions": {"e": null, "n": 342, "s": null, "w": null}, "room": {"coordinates": "(61,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 432, "terrain": "NORMAL", "title": "A misty room"}}, "475": {"directions": {"e": null, "n": 371, "s": 484, "w": null}, "room": {"coordinates": "(64,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 475, "terrain": "NORMAL", "title": "A misty room"}}, "480": {"directions": {"e": null, "n": 373, "s": null, "w": null}, "room": {"coordinates": "(63,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 480, "terrain": "NORMAL", "title": "A misty room"}}, "484": {"directions": {"e": null, "n": 475, "s": null, "w": null}, "room": {"coordinates": "(64,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 484, "terrain": "NORMAL", "title": "A misty room"}}, "487": {"directions": {"e": null, "n": 318, "s": 489, "w": null}, "room": {"coordinates": "(59,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 487, "terrain": "NORMAL", "title": "A misty room"}}, "489": {"directions": {"e": null, "n": 487, "s": null, "w": null}, "room": {"coordinates": "(59,46)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 489, "terrain": "NORMAL", "title": "A misty room"}}, "491": {"directions": {"e": null, "n": 351, "s": null, "w": null}, "room": {"coordinates": "(52,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 491, "terrain": "NORMAL", "title": "A misty room"}}, "492": {"directions": {"e": 431, "n": null, "s": null, "w": null}, "room": {"coordinates": "(56,48)", "description": "Before you stands a statue of Sandofsky, musclebound hero from times of old: Cold as ice and twice as smooth. You feel a chill as thoughts of algorithms fill the air. Before the statue, a plaque reads, \"Being a Hero, sometimes you must Recall to Zero.\"", "elevation": 0, "exits": ["e"], "id": 492, "terrain": "NORMAL", "title": "Sandofsky's Sanctum"}}}
 =======
 {"18": {"directions": {"e": null, "n": "?", "s": 22, "w": "?"}, "room": {"coordinates": "(61,56)", "description": "You are on the side of a steep incline.", "elevation": 4, "exits": ["n", "s", "w"], "id": 18, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "22": {"directions": {"e": null, "n": 18, "s": 78, "w": 36}, "room": {"coordinates": "(61,55)", "description": "You are standing at the zenith of Mt. Holloway. You see before you a holy shrine erected in the image of a magnificent winged deity.", "elevation": 5, "exits": ["n", "s", "w"], "id": 22, "terrain": "MOUNTAIN", "title": "The Peak of Mt. Holloway"}}, "34": {"directions": {"e": 35, "n": "?", "s": "?", "w": null}, "room": {"coordinates": "(62,56)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["n", "s", "e"], "id": 34, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "35": {"directions": {"e": null, "n": null, "s": 52, "w": 34}, "room": {"coordinates": "(63,56)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 35, "terrain": "NORMAL", "title": "A misty room"}}, "36": {"directions": {"e": 22, "n": null, "s": 48, "w": 60}, "room": {"coordinates": "(60,55)", "description": "You are on the side of a steep incline.", "elevation": 4, "exits": ["s", "e", "w"], "id": 36, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "45": {"directions": {"e": null, "n": "?", "s": 60, "w": null}, "room": {"coordinates": "(59,56)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["n", "s"], "id": 45, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "48": {"directions": {"e": null, "n": 36, "s": 105, "w": 149}, "room": {"coordinates": "(60,54)", "description": "You are on the side of a steep incline.", "elevation": 3, "exits": ["n", "s", "w"], "id": 48, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "52": {"directions": {"e": 75, "n": 35, "s": 68, "w": null}, "room": {"coordinates": "(63,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 52, "terrain": "NORMAL", "title": "A misty room"}}, "60": {"directions": {"e": 36, "n": 45, "s": null, "w": 70}, "room": {"coordinates": "(59,55)", "description": "You are on the side of a steep incline.", "elevation": 3, "exits": ["n", "e", "w"], "id": 60, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "68": {"directions": {"e": 100, "n": 52, "s": null, "w": null}, "room": {"coordinates": "(63,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e"], "id": 68, "terrain": "NORMAL", "title": "A misty room"}}, "70": {"directions": {"e": 60, "n": null, "s": 163, "w": 98}, "room": {"coordinates": "(58,55)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["s", "e", "w"], "id": 70, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "75": {"directions": {"e": 85, "n": null, "s": null, "w": 52}, "room": {"coordinates": "(64,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 75, "terrain": "NORMAL", "title": "A misty room"}}, "78": {"directions": {"e": null, "n": 22, "s": 108, "w": null}, "room": {"coordinates": "(61,54)", "description": "You are on the side of a steep incline.", "elevation": 4, "exits": ["n", "s"], "id": 78, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "85": {"directions": {"e": 154, "n": null, "s": null, "w": 75}, "room": {"coordinates": "(65,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 85, "terrain": "NORMAL", "title": "A misty room"}}, "98": {"directions": {"e": 70, "n": "?", "s": 126, "w": 109}, "room": {"coordinates": "(57,55)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["n", "s", "e", "w"], "id": 98, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "100": {"directions": {"e": 112, "n": null, "s": 106, "w": 68}, "room": {"coordinates": "(64,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 100, "terrain": "NORMAL", "title": "A misty room"}}, "105": {"directions": {"e": null, "n": 48, "s": null, "w": 202}, "room": {"coordinates": "(60,53)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["n", "w"], "id": 105, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "106": {"directions": {"e": null, "n": 100, "s": 111, "w": "?"}, "room": {"coordinates": "(64,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "w"], "id": 106, "terrain": "NORMAL", "title": "A misty room"}}, "108": {"directions": {"e": "?", "n": 78, "s": 117, "w": null}, "room": {"coordinates": "(61,53)", "description": "You are on the side of a steep incline.", "elevation": 3, "exits": ["n", "s", "e"], "id": 108, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "109": {"directions": {"e": 98, "n": null, "s": "?", "w": 175}, "room": {"coordinates": "(56,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 109, "terrain": "NORMAL", "title": "A misty room"}}, "111": {"directions": {"e": 158, "n": 106, "s": 367, "w": null}, "room": {"coordinates": "(64,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 111, "terrain": "NORMAL", "title": "A misty room"}}, "112": {"directions": {"e": 140, "n": null, "s": 141, "w": 100}, "room": {"coordinates": "(65,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 112, "terrain": "NORMAL", "title": "A misty room"}}, "117": {"directions": {"e": "?", "n": 108, "s": 131, "w": 133}, "room": {"coordinates": "(61,52)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["n", "s", "e", "w"], "id": 117, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "126": {"directions": {"e": null, "n": 98, "s": 129, "w": null}, "room": {"coordinates": "(57,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 126, "terrain": "NORMAL", "title": "A misty room"}}, "129": {"directions": {"e": 194, "n": 126, "s": null, "w": 170}, "room": {"coordinates": "(57,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e", "w"], "id": 129, "terrain": "NORMAL", "title": "A misty room"}}, "131": {"directions": {"e": null, "n": 117, "s": 244, "w": 138}, "room": {"coordinates": "(61,51)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["n", "s", "w"], "id": 131, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "133": {"directions": {"e": 117, "n": null, "s": null, "w": "?"}, "room": {"coordinates": "(60,52)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["e", "w"], "id": 133, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "138": {"directions": {"e": 131, "n": null, "s": 211, "w": 195}, "room": {"coordinates": "(60,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 138, "terrain": "NORMAL", "title": "A misty room"}}, "140": {"directions": {"e": null, "n": null, "s": null, "w": 112}, "room": {"coordinates": "(66,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 140, "terrain": "NORMAL", "title": "A misty room"}}, "141": {"directions": {"e": 156, "n": 112, "s": null, "w": null}, "room": {"coordinates": "(65,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e"], "id": 141, "terrain": "NORMAL", "title": "A misty room"}}, "149": {"directions": {"e": 48, "n": null, "s": null, "w": null}, "room": {"coordinates": "(59,54)", "description": "You are on the side of a steep incline.", "elevation": 2, "exits": ["e"], "id": 149, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "154": {"directions": {"e": 193, "n": null, "s": null, "w": 85}, "room": {"coordinates": "(66,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 154, "terrain": "NORMAL", "title": "A misty room"}}, "156": {"directions": {"e": 164, "n": null, "s": 168, "w": 141}, "room": {"coordinates": "(66,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 156, "terrain": "NORMAL", "title": "A misty room"}}, "158": {"directions": {"e": null, "n": null, "s": 167, "w": 111}, "room": {"coordinates": "(65,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 158, "terrain": "NORMAL", "title": "A misty room"}}, "163": {"directions": {"e": null, "n": 70, "s": null, "w": null}, "room": {"coordinates": "(58,54)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["n"], "id": 163, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "164": {"directions": {"e": 298, "n": 217, "s": null, "w": 156}, "room": {"coordinates": "(67,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e", "w"], "id": 164, "terrain": "NORMAL", "title": "A misty room"}}, "166": {"directions": {"e": "?", "n": null, "s": 198, "w": "?"}, "room": {"coordinates": "(62,52)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["s", "e", "w"], "id": 166, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "167": {"directions": {"e": 260, "n": 158, "s": 262, "w": null}, "room": {"coordinates": "(65,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 167, "terrain": "NORMAL", "title": "A misty room"}}, "168": {"directions": {"e": 340, "n": 156, "s": null, "w": null}, "room": {"coordinates": "(66,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e"], "id": 168, "terrain": "NORMAL", "title": "A misty room"}}, "170": {"directions": {"e": 129, "n": null, "s": null, "w": null}, "room": {"coordinates": "(56,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e"], "id": 170, "terrain": "NORMAL", "title": "A misty room"}}, "173": {"directions": {"e": "?", "n": null, "s": null, "w": 214}, "room": {"coordinates": "(59,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 173, "terrain": "NORMAL", "title": "A misty room"}}, "175": {"directions": {"e": 109, "n": null, "s": 183, "w": "?"}, "room": {"coordinates": "(55,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 175, "terrain": "NORMAL", "title": "A misty room"}}, "183": {"directions": {"e": null, "n": 175, "s": 229, "w": null}, "room": {"coordinates": "(55,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 183, "terrain": "NORMAL", "title": "A misty room"}}, "193": {"directions": {"e": "?", "n": null, "s": null, "w": 154}, "room": {"coordinates": "(67,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 193, "terrain": "NORMAL", "title": "A misty room"}}, "194": {"directions": {"e": null, "n": null, "s": 214, "w": 129}, "room": {"coordinates": "(58,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 194, "terrain": "NORMAL", "title": "A misty room"}}, "195": {"directions": {"e": 138, "n": null, "s": 228, "w": 225}, "room": {"coordinates": "(59,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 195, "terrain": "NORMAL", "title": "A misty room"}}, "198": {"directions": {"e": 199, "n": 166, "s": 239, "w": null}, "room": {"coordinates": "(62,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 198, "terrain": "NORMAL", "title": "A misty room"}}, "199": {"directions": {"e": null, "n": null, "s": 230, "w": 198}, "room": {"coordinates": "(63,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 199, "terrain": "NORMAL", "title": "A misty room"}}, "202": {"directions": {"e": 105, "n": null, "s": null, "w": null}, "room": {"coordinates": "(59,53)", "description": "You are at the base of a large, looming mountain.", "elevation": 1, "exits": ["e"], "id": 202, "terrain": "MOUNTAIN", "title": "Mt. Holloway"}}, "211": {"directions": {"e": null, "n": 138, "s": null, "w": null}, "room": {"coordinates": "(60,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 211, "terrain": "NORMAL", "title": "A misty room"}}, "214": {"directions": {"e": 173, "n": 194, "s": null, "w": 226}, "room": {"coordinates": "(58,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e", "w"], "id": 214, "terrain": "NORMAL", "title": "A misty room"}}, "217": {"directions": {"e": 247, "n": null, "s": 164, "w": null}, "room": {"coordinates": "(67,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 217, "terrain": "NORMAL", "title": "A misty room"}}, "225": {"directions": {"e": 195, "n": null, "s": 278, "w": null}, "room": {"coordinates": "(58,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 225, "terrain": "NORMAL", "title": "A misty room"}}, "226": {"directions": {"e": 214, "n": null, "s": 300, "w": null}, "room": {"coordinates": "(57,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 226, "terrain": "NORMAL", "title": "A misty room"}}, "228": {"directions": {"e": null, "n": 195, "s": 281, "w": null}, "room": {"coordinates": "(59,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 228, "terrain": "NORMAL", "title": "A misty room"}}, "229": {"directions": {"e": null, "n": 183, "s": "?", "w": "?"}, "room": {"coordinates": "(55,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "w"], "id": 229, "terrain": "NORMAL", "title": "A misty room"}}, "230": {"directions": {"e": 297, "n": 199, "s": 307, "w": null}, "room": {"coordinates": "(63,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 230, "terrain": "NORMAL", "title": "A misty room"}}, "239": {"directions": {"e": null, "n": 198, "s": null, "w": 244}, "room": {"coordinates": "(62,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "w"], "id": 239, "terrain": "NORMAL", "title": "A misty room"}}, "244": {"directions": {"e": 239, "n": 131, "s": null, "w": null}, "room": {"coordinates": "(61,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e"], "id": 244, "terrain": "NORMAL", "title": "A misty room"}}, "247": {"directions": {"e": 261, "n": null, "s": null, "w": 217}, "room": {"coordinates": "(68,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 247, "terrain": "NORMAL", "title": "A misty room"}}, "260": {"directions": {"e": null, "n": null, "s": null, "w": 167}, "room": {"coordinates": "(66,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 260, "terrain": "NORMAL", "title": "A misty room"}}, "261": {"directions": {"e": 322, "n": null, "s": 277, "w": 247}, "room": {"coordinates": "(69,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 261, "terrain": "NORMAL", "title": "A misty room"}}, "262": {"directions": {"e": 358, "n": 167, "s": 370, "w": null}, "room": {"coordinates": "(65,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 262, "terrain": "NORMAL", "title": "A misty room"}}, "277": {"directions": {"e": 323, "n": 261, "s": null, "w": null}, "room": {"coordinates": "(69,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e"], "id": 277, "terrain": "NORMAL", "title": "A misty room"}}, "278": {"directions": {"e": null, "n": 225, "s": null, "w": null}, "room": {"coordinates": "(58,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 278, "terrain": "NORMAL", "title": "A misty room"}}, "281": {"directions": {"e": 309, "n": 228, "s": 318, "w": 317}, "room": {"coordinates": "(59,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e", "w"], "id": 281, "terrain": "NORMAL", "title": "A misty room"}}, "297": {"directions": {"e": null, "n": null, "s": null, "w": 230}, "room": {"coordinates": "(64,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 297, "terrain": "NORMAL", "title": "A misty room"}}, "298": {"directions": {"e": null, "n": null, "s": 324, "w": 164}, "room": {"coordinates": "(68,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 298, "terrain": "NORMAL", "title": "A misty room"}}, "300": {"directions": {"e": null, "n": 226, "s": "?", "w": "?"}, "room": {"coordinates": "(57,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "w"], "id": 300, "terrain": "NORMAL", "title": "A misty room"}}, "307": {"directions": {"e": 371, "n": 230, "s": 373, "w": 321}, "room": {"coordinates": "(63,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e", "w"], "id": 307, "terrain": "NORMAL", "title": "A misty room"}}, "309": {"directions": {"e": 326, "n": null, "s": 333, "w": 281}, "room": {"coordinates": "(60,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 309, "terrain": "NORMAL", "title": "A misty room"}}, "317": {"directions": {"e": 281, "n": null, "s": 387, "w": 409}, "room": {"coordinates": "(58,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e", "w"], "id": 317, "terrain": "NORMAL", "title": "A misty room"}}, "318": {"directions": {"e": null, "n": 281, "s": 487, "w": null}, "room": {"coordinates": "(59,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 318, "terrain": "NORMAL", "title": "A misty room"}}, "321": {"directions": {"e": 307, "n": null, "s": 413, "w": null}, "room": {"coordinates": "(62,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 321, "terrain": "NORMAL", "title": "A misty room"}}, "322": {"directions": {"e": 435, "n": 382, "s": null, "w": 261}, "room": {"coordinates": "(70,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "e", "w"], "id": 322, "terrain": "NORMAL", "title": "A misty room"}}, "323": {"directions": {"e": "?", "n": null, "s": null, "w": 277}, "room": {"coordinates": "(70,53)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 323, "terrain": "NORMAL", "title": "A misty room"}}, "324": {"directions": {"e": 354, "n": 298, "s": 349, "w": null}, "room": {"coordinates": "(68,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 324, "terrain": "NORMAL", "title": "A misty room"}}, "326": {"directions": {"e": null, "n": null, "s": 342, "w": 309}, "room": {"coordinates": "(61,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 326, "terrain": "NORMAL", "title": "A misty room"}}, "333": {"directions": {"e": null, "n": 309, "s": 378, "w": null}, "room": {"coordinates": "(60,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 333, "terrain": "NORMAL", "title": "A misty room"}}, "340": {"directions": {"e": null, "n": null, "s": null, "w": 168}, "room": {"coordinates": "(67,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 340, "terrain": "NORMAL", "title": "A misty room"}}, "342": {"directions": {"e": null, "n": 326, "s": 432, "w": null}, "room": {"coordinates": "(61,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 342, "terrain": "NORMAL", "title": "A misty room"}}, "349": {"directions": {"e": 384, "n": 324, "s": 352, "w": 356}, "room": {"coordinates": "(68,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e", "w"], "id": 349, "terrain": "NORMAL", "title": "A misty room"}}, "352": {"directions": {"e": 485, "n": 349, "s": 362, "w": null}, "room": {"coordinates": "(68,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 352, "terrain": "NORMAL", "title": "A misty room"}}, "354": {"directions": {"e": null, "n": null, "s": null, "w": 324}, "room": {"coordinates": "(69,52)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 354, "terrain": "NORMAL", "title": "A misty room"}}, "356": {"directions": {"e": 349, "n": null, "s": null, "w": null}, "room": {"coordinates": "(67,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e"], "id": 356, "terrain": "NORMAL", "title": "A misty room"}}, "358": {"directions": {"e": 401, "n": null, "s": null, "w": 262}, "room": {"coordinates": "(66,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 358, "terrain": "NORMAL", "title": "A misty room"}}, "362": {"directions": {"e": null, "n": 352, "s": 399, "w": 463}, "room": {"coordinates": "(68,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "w"], "id": 362, "terrain": "NORMAL", "title": "A misty room"}}, "367": {"directions": {"e": null, "n": 111, "s": null, "w": null}, "room": {"coordinates": "(64,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 367, "terrain": "NORMAL", "title": "A misty room"}}, "370": {"directions": {"e": 407, "n": 262, "s": 434, "w": null}, "room": {"coordinates": "(65,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "e"], "id": 370, "terrain": "NORMAL", "title": "A misty room"}}, "371": {"directions": {"e": null, "n": null, "s": 475, "w": 307}, "room": {"coordinates": "(64,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 371, "terrain": "NORMAL", "title": "A misty room"}}, "373": {"directions": {"e": null, "n": 307, "s": 480, "w": null}, "room": {"coordinates": "(63,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 373, "terrain": "NORMAL", "title": "A misty room"}}, "378": {"directions": {"e": null, "n": 333, "s": null, "w": null}, "room": {"coordinates": "(60,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 378, "terrain": "NORMAL", "title": "A misty room"}}, "382": {"directions": {"e": 388, "n": null, "s": 322, "w": null}, "room": {"coordinates": "(70,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 382, "terrain": "NORMAL", "title": "A misty room"}}, "384": {"directions": {"e": null, "n": null, "s": null, "w": 349}, "room": {"coordinates": "(69,51)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 384, "terrain": "NORMAL", "title": "A misty room"}}, "387": {"directions": {"e": null, "n": 317, "s": 417, "w": 431}, "room": {"coordinates": "(58,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s", "w"], "id": 387, "terrain": "NORMAL", "title": "A misty room"}}, "388": {"directions": {"e": 477, "n": null, "s": null, "w": 382}, "room": {"coordinates": "(71,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 388, "terrain": "NORMAL", "title": "A misty room"}}, "399": {"directions": {"e": null, "n": 362, "s": 467, "w": null}, "room": {"coordinates": "(68,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 399, "terrain": "NORMAL", "title": "A misty room"}}, "401": {"directions": {"e": null, "n": null, "s": null, "w": 358}, "room": {"coordinates": "(67,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 401, "terrain": "NORMAL", "title": "A misty room"}}, "407": {"directions": {"e": null, "n": null, "s": 496, "w": 370}, "room": {"coordinates": "(66,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "w"], "id": 407, "terrain": "NORMAL", "title": "A misty room"}}, "409": {"directions": {"e": 317, "n": null, "s": null, "w": null}, "room": {"coordinates": "(57,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e"], "id": 409, "terrain": "NORMAL", "title": "A misty room"}}, "413": {"directions": {"e": null, "n": 321, "s": null, "w": null}, "room": {"coordinates": "(62,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 413, "terrain": "NORMAL", "title": "A misty room"}}, "417": {"directions": {"e": null, "n": 387, "s": null, "w": null}, "room": {"coordinates": "(58,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 417, "terrain": "NORMAL", "title": "A misty room"}}, "431": {"directions": {"e": 387, "n": null, "s": null, "w": 492}, "room": {"coordinates": "(57,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 431, "terrain": "NORMAL", "title": "A misty room"}}, "432": {"directions": {"e": null, "n": 342, "s": null, "w": null}, "room": {"coordinates": "(61,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 432, "terrain": "NORMAL", "title": "A misty room"}}, "434": {"directions": {"e": null, "n": 370, "s": null, "w": null}, "room": {"coordinates": "(65,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 434, "terrain": "NORMAL", "title": "A misty room"}}, "435": {"directions": {"e": null, "n": null, "s": null, "w": 322}, "room": {"coordinates": "(71,54)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 435, "terrain": "NORMAL", "title": "A misty room"}}, "463": {"directions": {"e": 362, "n": null, "s": 468, "w": null}, "room": {"coordinates": "(67,49)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["s", "e"], "id": 463, "terrain": "NORMAL", "title": "A misty room"}}, "467": {"directions": {"e": null, "n": 399, "s": null, "w": null}, "room": {"coordinates": "(68,47)", "description": "You see a sign before you that reads:\n\n'You have found Pirate Ry's. Send a `change_name` request and I'll change your identity to whatever you wish... for a price.'", "elevation": 0, "exits": ["n"], "id": 467, "terrain": "NORMAL", "title": "Pirate Ry's"}}, "468": {"directions": {"e": null, "n": 463, "s": null, "w": null}, "room": {"coordinates": "(67,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 468, "terrain": "NORMAL", "title": "A misty room"}}, "475": {"directions": {"e": null, "n": 371, "s": 484, "w": null}, "room": {"coordinates": "(64,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 475, "terrain": "NORMAL", "title": "A misty room"}}, "477": {"directions": {"e": "?", "n": null, "s": null, "w": 388}, "room": {"coordinates": "(72,55)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["e", "w"], "id": 477, "terrain": "NORMAL", "title": "A misty room"}}, "480": {"directions": {"e": null, "n": 373, "s": null, "w": null}, "room": {"coordinates": "(63,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 480, "terrain": "NORMAL", "title": "A misty room"}}, "484": {"directions": {"e": null, "n": 475, "s": null, "w": null}, "room": {"coordinates": "(64,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 484, "terrain": "NORMAL", "title": "A misty room"}}, "485": {"directions": {"e": null, "n": null, "s": null, "w": 352}, "room": {"coordinates": "(69,50)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["w"], "id": 485, "terrain": "NORMAL", "title": "A misty room"}}, "487": {"directions": {"e": null, "n": 318, "s": 489, "w": null}, "room": {"coordinates": "(59,47)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n", "s"], "id": 487, "terrain": "NORMAL", "title": "A misty room"}}, "489": {"directions": {"e": null, "n": 487, "s": null, "w": null}, "room": {"coordinates": "(59,46)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 489, "terrain": "NORMAL", "title": "A misty room"}}, "492": {"directions": {"e": 431, "n": null, "s": null, "w": null}, "room": {"coordinates": "(56,48)", "description": "Before you stands a statue of Sandofsky, musclebound hero from times of old: Cold as ice and twice as smooth. You feel a chill as thoughts of algorithms fill the air. Before the statue, a plaque reads, \"Being a Hero, sometimes you must Recall to Zero.\"", "elevation": 0, "exits": ["e"], "id": 492, "terrain": "NORMAL", "title": "Sandofsky's Sanctum"}}, "496": {"directions": {"e": null, "n": 407, "s": null, "w": null}, "room": {"coordinates": "(66,48)", "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.", "elevation": 0, "exits": ["n"], "id": 496, "terrain": "NORMAL", "title": "A misty room"}}}
 >>>>>>> room count 118
+=======
+{
+  "18": {
+    "directions": {
+      "e": null,
+      "n": "?",
+      "s": 22,
+      "w": "?"
+    },
+    "room": {
+      "coordinates": "(61,56)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 4,
+      "exits": [
+        "n",
+        "s",
+        "w"
+      ],
+      "id": 18,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "22": {
+    "directions": {
+      "e": null,
+      "n": 18,
+      "s": 78,
+      "w": 36
+    },
+    "room": {
+      "coordinates": "(61,55)",
+      "description": "You are standing at the zenith of Mt. Holloway. You see before you a holy shrine erected in the image of a magnificent winged deity.",
+      "elevation": 5,
+      "exits": [
+        "n",
+        "s",
+        "w"
+      ],
+      "id": 22,
+      "terrain": "MOUNTAIN",
+      "title": "The Peak of Mt. Holloway"
+    }
+  },
+  "34": {
+    "directions": {
+      "e": 35,
+      "n": "?",
+      "s": "?",
+      "w": null
+    },
+    "room": {
+      "coordinates": "(62,56)",
+      "description": "You are at the base of a large, looming mountain.",
+      "elevation": 1,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 34,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "35": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": 52,
+      "w": 34
+    },
+    "room": {
+      "coordinates": "(63,56)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "w"
+      ],
+      "id": 35,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "36": {
+    "directions": {
+      "e": 22,
+      "n": null,
+      "s": 48,
+      "w": 60
+    },
+    "room": {
+      "coordinates": "(60,55)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 4,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 36,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "45": {
+    "directions": {
+      "e": null,
+      "n": "?",
+      "s": 60,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(59,56)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 2,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 45,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "48": {
+    "directions": {
+      "e": null,
+      "n": 36,
+      "s": 105,
+      "w": 149
+    },
+    "room": {
+      "coordinates": "(60,54)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 3,
+      "exits": [
+        "n",
+        "s",
+        "w"
+      ],
+      "id": 48,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "52": {
+    "directions": {
+      "e": 75,
+      "n": 35,
+      "s": 68,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(63,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 52,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "60": {
+    "directions": {
+      "e": 36,
+      "n": 45,
+      "s": null,
+      "w": 70
+    },
+    "room": {
+      "coordinates": "(59,55)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 3,
+      "exits": [
+        "n",
+        "e",
+        "w"
+      ],
+      "id": 60,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "68": {
+    "directions": {
+      "e": 100,
+      "n": 52,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(63,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "e"
+      ],
+      "id": 68,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "70": {
+    "directions": {
+      "e": 60,
+      "n": null,
+      "s": 163,
+      "w": 98
+    },
+    "room": {
+      "coordinates": "(58,55)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 2,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 70,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "75": {
+    "directions": {
+      "e": 85,
+      "n": null,
+      "s": null,
+      "w": 52
+    },
+    "room": {
+      "coordinates": "(64,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 75,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "78": {
+    "directions": {
+      "e": null,
+      "n": 22,
+      "s": 108,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(61,54)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 4,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 78,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "85": {
+    "directions": {
+      "e": 154,
+      "n": null,
+      "s": null,
+      "w": 75
+    },
+    "room": {
+      "coordinates": "(65,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 85,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "98": {
+    "directions": {
+      "e": 70,
+      "n": "?",
+      "s": 126,
+      "w": 109
+    },
+    "room": {
+      "coordinates": "(57,55)",
+      "description": "You are at the base of a large, looming mountain.",
+      "elevation": 1,
+      "exits": [
+        "n",
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 98,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "100": {
+    "directions": {
+      "e": 112,
+      "n": null,
+      "s": 106,
+      "w": 68
+    },
+    "room": {
+      "coordinates": "(64,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 100,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "105": {
+    "directions": {
+      "e": null,
+      "n": 48,
+      "s": null,
+      "w": 202
+    },
+    "room": {
+      "coordinates": "(60,53)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 2,
+      "exits": [
+        "n",
+        "w"
+      ],
+      "id": 105,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "106": {
+    "directions": {
+      "e": null,
+      "n": 100,
+      "s": 111,
+      "w": "?"
+    },
+    "room": {
+      "coordinates": "(64,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "w"
+      ],
+      "id": 106,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "108": {
+    "directions": {
+      "e": "?",
+      "n": 78,
+      "s": 117,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(61,53)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 3,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 108,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "109": {
+    "directions": {
+      "e": 98,
+      "n": null,
+      "s": "?",
+      "w": 175
+    },
+    "room": {
+      "coordinates": "(56,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 109,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "111": {
+    "directions": {
+      "e": 158,
+      "n": 106,
+      "s": 367,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(64,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 111,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "112": {
+    "directions": {
+      "e": 140,
+      "n": null,
+      "s": 141,
+      "w": 100
+    },
+    "room": {
+      "coordinates": "(65,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 112,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "117": {
+    "directions": {
+      "e": "?",
+      "n": 108,
+      "s": 131,
+      "w": 133
+    },
+    "room": {
+      "coordinates": "(61,52)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 2,
+      "exits": [
+        "n",
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 117,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "126": {
+    "directions": {
+      "e": null,
+      "n": 98,
+      "s": 129,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(57,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 126,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "129": {
+    "directions": {
+      "e": 194,
+      "n": 126,
+      "s": null,
+      "w": 170
+    },
+    "room": {
+      "coordinates": "(57,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "e",
+        "w"
+      ],
+      "id": 129,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "131": {
+    "directions": {
+      "e": null,
+      "n": 117,
+      "s": 244,
+      "w": 138
+    },
+    "room": {
+      "coordinates": "(61,51)",
+      "description": "You are at the base of a large, looming mountain.",
+      "elevation": 1,
+      "exits": [
+        "n",
+        "s",
+        "w"
+      ],
+      "id": 131,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "133": {
+    "directions": {
+      "e": 117,
+      "n": null,
+      "s": null,
+      "w": "?"
+    },
+    "room": {
+      "coordinates": "(60,52)",
+      "description": "You are at the base of a large, looming mountain.",
+      "elevation": 1,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 133,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "138": {
+    "directions": {
+      "e": 131,
+      "n": null,
+      "s": 211,
+      "w": 195
+    },
+    "room": {
+      "coordinates": "(60,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 138,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "140": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": null,
+      "w": 112
+    },
+    "room": {
+      "coordinates": "(66,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "w"
+      ],
+      "id": 140,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "141": {
+    "directions": {
+      "e": 156,
+      "n": 112,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(65,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "e"
+      ],
+      "id": 141,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "149": {
+    "directions": {
+      "e": 48,
+      "n": null,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(59,54)",
+      "description": "You are on the side of a steep incline.",
+      "elevation": 2,
+      "exits": [
+        "e"
+      ],
+      "id": 149,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "154": {
+    "directions": {
+      "e": 193,
+      "n": null,
+      "s": null,
+      "w": 85
+    },
+    "room": {
+      "coordinates": "(66,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 154,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "156": {
+    "directions": {
+      "e": 164,
+      "n": null,
+      "s": 168,
+      "w": 141
+    },
+    "room": {
+      "coordinates": "(66,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 156,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "158": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": 167,
+      "w": 111
+    },
+    "room": {
+      "coordinates": "(65,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "w"
+      ],
+      "id": 158,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "163": {
+    "directions": {
+      "e": null,
+      "n": 70,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(58,54)",
+      "description": "You are at the base of a large, looming mountain.",
+      "elevation": 1,
+      "exits": [
+        "n"
+      ],
+      "id": 163,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "164": {
+    "directions": {
+      "e": 298,
+      "n": 217,
+      "s": null,
+      "w": 156
+    },
+    "room": {
+      "coordinates": "(67,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "e",
+        "w"
+      ],
+      "id": 164,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "166": {
+    "directions": {
+      "e": "?",
+      "n": null,
+      "s": 198,
+      "w": "?"
+    },
+    "room": {
+      "coordinates": "(62,52)",
+      "description": "You are at the base of a large, looming mountain.",
+      "elevation": 1,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 166,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "167": {
+    "directions": {
+      "e": 260,
+      "n": 158,
+      "s": 262,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(65,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 167,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "168": {
+    "directions": {
+      "e": 340,
+      "n": 156,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(66,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "e"
+      ],
+      "id": 168,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "170": {
+    "directions": {
+      "e": 129,
+      "n": null,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(56,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e"
+      ],
+      "id": 170,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "173": {
+    "directions": {
+      "e": "?",
+      "n": null,
+      "s": null,
+      "w": 214
+    },
+    "room": {
+      "coordinates": "(59,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 173,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "175": {
+    "directions": {
+      "e": 109,
+      "n": null,
+      "s": 183,
+      "w": "?"
+    },
+    "room": {
+      "coordinates": "(55,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 175,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "183": {
+    "directions": {
+      "e": null,
+      "n": 175,
+      "s": 229,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(55,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 183,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "193": {
+    "directions": {
+      "e": "?",
+      "n": null,
+      "s": null,
+      "w": 154
+    },
+    "room": {
+      "coordinates": "(67,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 193,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "194": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": 214,
+      "w": 129
+    },
+    "room": {
+      "coordinates": "(58,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "w"
+      ],
+      "id": 194,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "195": {
+    "directions": {
+      "e": 138,
+      "n": null,
+      "s": 228,
+      "w": 225
+    },
+    "room": {
+      "coordinates": "(59,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 195,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "198": {
+    "directions": {
+      "e": 199,
+      "n": 166,
+      "s": 239,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(62,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 198,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "199": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": 230,
+      "w": 198
+    },
+    "room": {
+      "coordinates": "(63,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "w"
+      ],
+      "id": 199,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "202": {
+    "directions": {
+      "e": 105,
+      "n": null,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(59,53)",
+      "description": "You are at the base of a large, looming mountain.",
+      "elevation": 1,
+      "exits": [
+        "e"
+      ],
+      "id": 202,
+      "terrain": "MOUNTAIN",
+      "title": "Mt. Holloway"
+    }
+  },
+  "211": {
+    "directions": {
+      "e": null,
+      "n": 138,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(60,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 211,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "214": {
+    "directions": {
+      "e": 173,
+      "n": 194,
+      "s": null,
+      "w": 226
+    },
+    "room": {
+      "coordinates": "(58,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "e",
+        "w"
+      ],
+      "id": 214,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "217": {
+    "directions": {
+      "e": 247,
+      "n": null,
+      "s": 164,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(67,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e"
+      ],
+      "id": 217,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "225": {
+    "directions": {
+      "e": 195,
+      "n": null,
+      "s": 278,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(58,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e"
+      ],
+      "id": 225,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "226": {
+    "directions": {
+      "e": 214,
+      "n": null,
+      "s": 300,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(57,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e"
+      ],
+      "id": 226,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "228": {
+    "directions": {
+      "e": null,
+      "n": 195,
+      "s": 281,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(59,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 228,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "229": {
+    "directions": {
+      "e": null,
+      "n": 183,
+      "s": "?",
+      "w": "?"
+    },
+    "room": {
+      "coordinates": "(55,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "w"
+      ],
+      "id": 229,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "230": {
+    "directions": {
+      "e": 297,
+      "n": 199,
+      "s": 307,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(63,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 230,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "239": {
+    "directions": {
+      "e": null,
+      "n": 198,
+      "s": null,
+      "w": 244
+    },
+    "room": {
+      "coordinates": "(62,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "w"
+      ],
+      "id": 239,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "244": {
+    "directions": {
+      "e": 239,
+      "n": 131,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(61,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "e"
+      ],
+      "id": 244,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "247": {
+    "directions": {
+      "e": 261,
+      "n": null,
+      "s": null,
+      "w": 217
+    },
+    "room": {
+      "coordinates": "(68,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 247,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "260": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": null,
+      "w": 167
+    },
+    "room": {
+      "coordinates": "(66,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "w"
+      ],
+      "id": 260,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "261": {
+    "directions": {
+      "e": 322,
+      "n": null,
+      "s": 277,
+      "w": 247
+    },
+    "room": {
+      "coordinates": "(69,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 261,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "262": {
+    "directions": {
+      "e": 358,
+      "n": 167,
+      "s": 370,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(65,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 262,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "277": {
+    "directions": {
+      "e": 323,
+      "n": 261,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(69,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "e"
+      ],
+      "id": 277,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "278": {
+    "directions": {
+      "e": null,
+      "n": 225,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(58,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 278,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "281": {
+    "directions": {
+      "e": 309,
+      "n": 228,
+      "s": 318,
+      "w": 317
+    },
+    "room": {
+      "coordinates": "(59,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 281,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "297": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": null,
+      "w": 230
+    },
+    "room": {
+      "coordinates": "(64,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "w"
+      ],
+      "id": 297,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "298": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": 324,
+      "w": 164
+    },
+    "room": {
+      "coordinates": "(68,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "w"
+      ],
+      "id": 298,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "300": {
+    "directions": {
+      "e": null,
+      "n": 226,
+      "s": "?",
+      "w": "?"
+    },
+    "room": {
+      "coordinates": "(57,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "w"
+      ],
+      "id": 300,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "307": {
+    "directions": {
+      "e": 371,
+      "n": 230,
+      "s": 373,
+      "w": 321
+    },
+    "room": {
+      "coordinates": "(63,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 307,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "309": {
+    "directions": {
+      "e": 326,
+      "n": null,
+      "s": 333,
+      "w": 281
+    },
+    "room": {
+      "coordinates": "(60,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 309,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "317": {
+    "directions": {
+      "e": 281,
+      "n": null,
+      "s": 387,
+      "w": 409
+    },
+    "room": {
+      "coordinates": "(58,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 317,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "318": {
+    "directions": {
+      "e": null,
+      "n": 281,
+      "s": 487,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(59,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 318,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "321": {
+    "directions": {
+      "e": 307,
+      "n": null,
+      "s": 413,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(62,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e"
+      ],
+      "id": 321,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "322": {
+    "directions": {
+      "e": 435,
+      "n": 382,
+      "s": null,
+      "w": 261
+    },
+    "room": {
+      "coordinates": "(70,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "e",
+        "w"
+      ],
+      "id": 322,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "323": {
+    "directions": {
+      "e": "?",
+      "n": null,
+      "s": null,
+      "w": 277
+    },
+    "room": {
+      "coordinates": "(70,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 323,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "324": {
+    "directions": {
+      "e": 354,
+      "n": 298,
+      "s": 349,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(68,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 324,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "326": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": 342,
+      "w": 309
+    },
+    "room": {
+      "coordinates": "(61,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "w"
+      ],
+      "id": 326,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "333": {
+    "directions": {
+      "e": null,
+      "n": 309,
+      "s": 378,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(60,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 333,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "340": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": null,
+      "w": 168
+    },
+    "room": {
+      "coordinates": "(67,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "w"
+      ],
+      "id": 340,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "342": {
+    "directions": {
+      "e": null,
+      "n": 326,
+      "s": 432,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(61,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 342,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "343": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": "?",
+      "w": 351
+    },
+    "room": {
+      "coordinates": "(53,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "w"
+      ],
+      "id": 343,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "349": {
+    "directions": {
+      "e": 384,
+      "n": 324,
+      "s": 352,
+      "w": 356
+    },
+    "room": {
+      "coordinates": "(68,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 349,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "351": {
+    "directions": {
+      "e": 343,
+      "n": null,
+      "s": 491,
+      "w": 478
+    },
+    "room": {
+      "coordinates": "(52,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e",
+        "w"
+      ],
+      "id": 351,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "352": {
+    "directions": {
+      "e": 485,
+      "n": 349,
+      "s": 362,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(68,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 352,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "354": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": null,
+      "w": 324
+    },
+    "room": {
+      "coordinates": "(69,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "w"
+      ],
+      "id": 354,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "356": {
+    "directions": {
+      "e": 349,
+      "n": null,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(67,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e"
+      ],
+      "id": 356,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "358": {
+    "directions": {
+      "e": 401,
+      "n": null,
+      "s": null,
+      "w": 262
+    },
+    "room": {
+      "coordinates": "(66,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 358,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "362": {
+    "directions": {
+      "e": null,
+      "n": 352,
+      "s": 399,
+      "w": 463
+    },
+    "room": {
+      "coordinates": "(68,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "w"
+      ],
+      "id": 362,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "367": {
+    "directions": {
+      "e": null,
+      "n": 111,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(64,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 367,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "370": {
+    "directions": {
+      "e": 407,
+      "n": 262,
+      "s": 434,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(65,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "e"
+      ],
+      "id": 370,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "371": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": 475,
+      "w": 307
+    },
+    "room": {
+      "coordinates": "(64,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "w"
+      ],
+      "id": 371,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "373": {
+    "directions": {
+      "e": null,
+      "n": 307,
+      "s": 480,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(63,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 373,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "378": {
+    "directions": {
+      "e": null,
+      "n": 333,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(60,47)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 378,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "382": {
+    "directions": {
+      "e": 388,
+      "n": null,
+      "s": 322,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(70,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e"
+      ],
+      "id": 382,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "384": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": null,
+      "w": 349
+    },
+    "room": {
+      "coordinates": "(69,51)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "w"
+      ],
+      "id": 384,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "387": {
+    "directions": {
+      "e": null,
+      "n": 317,
+      "s": 417,
+      "w": 431
+    },
+    "room": {
+      "coordinates": "(58,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s",
+        "w"
+      ],
+      "id": 387,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "388": {
+    "directions": {
+      "e": 477,
+      "n": null,
+      "s": null,
+      "w": 382
+    },
+    "room": {
+      "coordinates": "(71,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 388,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "399": {
+    "directions": {
+      "e": null,
+      "n": 362,
+      "s": 467,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(68,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 399,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "401": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": null,
+      "w": 358
+    },
+    "room": {
+      "coordinates": "(67,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "w"
+      ],
+      "id": 401,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "407": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": 496,
+      "w": 370
+    },
+    "room": {
+      "coordinates": "(66,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "w"
+      ],
+      "id": 407,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "409": {
+    "directions": {
+      "e": 317,
+      "n": null,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(57,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e"
+      ],
+      "id": 409,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "413": {
+    "directions": {
+      "e": null,
+      "n": 321,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(62,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 413,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "417": {
+    "directions": {
+      "e": null,
+      "n": 387,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(58,47)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 417,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "431": {
+    "directions": {
+      "e": 387,
+      "n": null,
+      "s": null,
+      "w": 492
+    },
+    "room": {
+      "coordinates": "(57,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 431,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "432": {
+    "directions": {
+      "e": null,
+      "n": 342,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(61,47)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 432,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "434": {
+    "directions": {
+      "e": null,
+      "n": 370,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(65,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 434,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "435": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": null,
+      "w": 322
+    },
+    "room": {
+      "coordinates": "(71,54)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "w"
+      ],
+      "id": 435,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "463": {
+    "directions": {
+      "e": 362,
+      "n": null,
+      "s": 468,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(67,49)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "s",
+        "e"
+      ],
+      "id": 463,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "467": {
+    "directions": {
+      "e": null,
+      "n": 399,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(68,47)",
+      "description": "You see a sign before you that reads:\n\n'You have found Pirate Ry's. Send a `change_name` request and I'll change your identity to whatever you wish... for a price.'",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 467,
+      "terrain": "NORMAL",
+      "title": "Pirate Ry's"
+    }
+  },
+  "468": {
+    "directions": {
+      "e": null,
+      "n": 463,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(67,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 468,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "475": {
+    "directions": {
+      "e": null,
+      "n": 371,
+      "s": 484,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(64,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 475,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "477": {
+    "directions": {
+      "e": "?",
+      "n": null,
+      "s": null,
+      "w": 388
+    },
+    "room": {
+      "coordinates": "(72,55)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e",
+        "w"
+      ],
+      "id": 477,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "478": {
+    "directions": {
+      "e": 351,
+      "n": null,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(51,53)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "e"
+      ],
+      "id": 478,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "480": {
+    "directions": {
+      "e": null,
+      "n": 373,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(63,47)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 480,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "484": {
+    "directions": {
+      "e": null,
+      "n": 475,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(64,47)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 484,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "485": {
+    "directions": {
+      "e": null,
+      "n": null,
+      "s": null,
+      "w": 352
+    },
+    "room": {
+      "coordinates": "(69,50)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "w"
+      ],
+      "id": 485,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "487": {
+    "directions": {
+      "e": null,
+      "n": 318,
+      "s": 489,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(59,47)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n",
+        "s"
+      ],
+      "id": 487,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "489": {
+    "directions": {
+      "e": null,
+      "n": 487,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(59,46)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 489,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "491": {
+    "directions": {
+      "e": null,
+      "n": 351,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(52,52)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 491,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  },
+  "492": {
+    "directions": {
+      "e": 431,
+      "n": null,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(56,48)",
+      "description": "Before you stands a statue of Sandofsky, musclebound hero from times of old: Cold as ice and twice as smooth. You feel a chill as thoughts of algorithms fill the air. Before the statue, a plaque reads, \"Being a Hero, sometimes you must Recall to Zero.\"",
+      "elevation": 0,
+      "exits": [
+        "e"
+      ],
+      "id": 492,
+      "terrain": "NORMAL",
+      "title": "Sandofsky's Sanctum"
+    }
+  },
+  "496": {
+    "directions": {
+      "e": null,
+      "n": 407,
+      "s": null,
+      "w": null
+    },
+    "room": {
+      "coordinates": "(66,48)",
+      "description": "You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.",
+      "elevation": 0,
+      "exits": [
+        "n"
+      ],
+      "id": 496,
+      "terrain": "NORMAL",
+      "title": "A misty room"
+    }
+  }
+}
+>>>>>>> fix room indent
