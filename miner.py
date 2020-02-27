@@ -3,6 +3,7 @@ import requests
 import json
 import random
 import sys
+import time
 
 from uuid import uuid4
 
@@ -17,41 +18,24 @@ load_dotenv()
 
 
 def proof_of_work(data):
-    """
-    Multi-Ouroboros of Work Algorithm
-    - Find a number p' such that the last six digits of hash(p) are equal
-    to the first six digits of hash(p')
-    - IE:  last_hash: ...AE9123456, new hash 123456888...
-    - p is the previous proof, and p' is the new proof
-    - Use the same method to generate SHA-256 hashes as the examples in class
-    """
 
     start = timer()
 
     print("Searching for next proof")
 
-
     last_proof = data["proof"]
     difficulty = data["difficulty"]
     # start at a random point
-    proof = last_proof* random.randint(0, 100)
+    proof = last_proof * random.randint(0, 100)
 
-    valid_proof(last_proof, difficulty, proof)
-    # while valid_proof(last_proof, difficulty, proof) is False:
-    #     proof += 1
+    while valid_proof(last_proof, difficulty, proof) is False:
+        proof += 1
 
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
 
 
 def valid_proof(last_proof, difficulty, proof):
-    """
-    Validates the Proof:  Multi-ouroborus:  Do the last six characters of
-    the hash of the last proof match the first six characters of the hash
-    of the new proof?
-
-    IE:  last_hash: ...AE9123456, new hash 123456E88...
-    """
     # hash the last_proof and the attempted proof together
     # then check to see if it has the required zeros
 
@@ -59,15 +43,14 @@ def valid_proof(last_proof, difficulty, proof):
 
     guess = f'{last_proof}{proof}'.encode()
     guess_hash = hashlib.sha256(guess).hexdigest()
-    print(guess_hash)
-    return guess_hash[:difficulty] == zeros
+
+    if guess_hash[:difficulty] == zeros:
+        print(guess_hash)
+        return True
+    return False
 
 if __name__ == '__main__':
-    # What node are we interacting with?
-    if len(sys.argv) > 1:
-        node = sys.argv[1]
-    else:
-        node = "https://lambda-treasure-hunt.herokuapp.com/api/bc"
+    node = "https://lambda-treasure-hunt.herokuapp.com/api/bc"
 
     coins_mined = 0
     API_KEY = os.getenv("API_KEY")
@@ -78,18 +61,25 @@ if __name__ == '__main__':
         # Get the last proof from the server
         r = requests.get(url=node + "/last_proof", headers=headers)
         data = r.json()
-        # first i can get all the data i need
+
+        # need to sleep for 1 second after hitting last proof endpoint
+        print('sleeping 1 sec')
+        time.sleep(1)
 
         new_proof = proof_of_work(data)
 
-        break
-
         post_data = {"proof": new_proof}
 
-        r = requests.post(url=node + "/mine", json=post_data)
+        r = requests.post(url=node + "/mine", json=post_data, headers=headers)
         data = r.json()
-        if data.get('message') == 'New Block Forged':
-            coins_mined += 1
-            print("Total coins mined: " + str(coins_mined))
-        else:
-            print(data.get('message'))
+        print(data)
+        # if data.get('message') == 'New Block Forged':
+        #     coins_mined += 1
+        #     print("Total coins mined: " + str(coins_mined))
+        # else:
+        #     print(data.get('message'))
+
+        # cooldown after hitting /mine endpoint
+        # will change this to 15 seconds once we get our names
+        print('sleeping 45 sec')
+        time.sleep(45)
