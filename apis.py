@@ -103,9 +103,19 @@ def check_status(**payload):
 
 #wear item
 def equipItem(equipItem):
+    if "name" and "bodywear" and "footwear" not in payload:
+        raise
     data = {"name":f"{equipItem}"}
-    response = requests.post(url = base_url + "/wear", headers = headers).json()
-    return data
+    data = {"name": payload["bodywear"]}
+    data = {"name": payload["footwear"]}
+
+    try:
+        data_payload = json.dumps(data)
+        response = requests.post(url = base_url + "/wear", headers = headers).json()
+        return data
+    except Exception:
+        raise
+
 #remove item
 def unequipItem(unequipItem):
     data = {"name":f"{unequipItem}"}
