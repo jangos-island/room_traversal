@@ -93,14 +93,13 @@ def examine(**payload):
     except Exception:
         raise
 
-
+#status/inventory
 def check_status(**payload):
     try:
         response = requests.post(url=base_url + "/status", headers=headers).json()
         return response
     except Exception:
         raise
-
 
 def pray(**payload):
     try:
@@ -124,3 +123,29 @@ def warp(**payload):
         return response
     except Exception:
         raise
+
+#wear item
+def equipItem(equipItem):
+    if "name" and "bodywear" and "footwear" not in payload:
+        raise
+    data = {"name":f"{equipItem}"}
+    data = {"name": payload["bodywear"]}
+    data = {"name": payload["footwear"]}
+
+    try:
+        data_payload = json.dumps(data)
+        response = requests.post(url = base_url + "/wear", headers = headers).json()
+        return data
+    except Exception:
+        raise
+
+#remove item
+def unequipItem(unequipItem):
+    data = {"name":f"{unequipItem}"}
+    response = requests.post(url = base_url + "/undress", headers = headers).json()
+    return data    
+#change name
+def changeName(newName):
+    data = {"name":f"{newName}"}
+    response = requests.post(url = base_url + "/change_name", headers = headers).json()
+    return data 
