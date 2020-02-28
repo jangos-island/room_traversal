@@ -1,11 +1,13 @@
 import requests
 import random
 from datetime import datetime
-import time
+import json
+from collections import deque
 
 from player import Player
 from room import Room
-from apis import game_init, explore_new_room
+from apis import game_init, explore_room, pick_item, check_status, examine
+from utils import debounce
 
 reverse_direction = {"n": "s", "s": "n", "w": "e", "e": "w"}
 
@@ -14,29 +16,42 @@ def record_move(rooms, to_room, from_room=None, direction=None):
     if to_room.id not in rooms:
         new_room = {
             "directions": {"n": None, "s": None, "w": None, "e": None},
-            "room": to_room,
+            "room": to_room.get_json(),
         }
         for exit in to_room.exits:
             new_room["directions"][exit] = "?"
         rooms[to_room.id] = new_room
-    if from_room is not None:
+        
+        # if from_room is not None:
+        #     rooms[from_room.id]["directions"][direction] = to_room.id
+        #     rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
+
+        # with open('room.txt', 'w') as outfile:
+        #     json.dump(rooms, outfile, sort_keys=True, indent=2)
+    
+    if from_room is not None and rooms[from_room.id]["directions"][direction] == '?':
         rooms[from_room.id]["directions"][direction] = to_room.id
         rooms[to_room.id]["directions"][reverse_direction[direction]] = from_room.id
 
+        with open('room.txt', 'w') as outfile:
+            json.dump(rooms, outfile, sort_keys=True, indent=2)
+        
 
 def get_directions_to_unseen_room(rooms, current_room):
     seen = set([current_room.id])
-    exits = [
+    exits_list = [
         {"direction": exit, "path": []}
         for exit in rooms[current_room.id]["directions"].items()
         if exit[1] is not None and exit[1] not in seen
     ]
 
     random.seed(random.randint(0, 100))
-    random.shuffle(exits)
+    random.shuffle(exits_list)
+
+    exits = deque(exits_list)
 
     while len(exits) > 0:
-        current = exits.pop()
+        current = exits.popleft()
         if current["direction"][1] == "?":
             current["path"].append(current["direction"])
             return current["path"]
@@ -49,38 +64,44 @@ def get_directions_to_unseen_room(rooms, current_room):
             ]
             random.seed(0, 100)
             random.shuffle(next_exits)
-            exits = exits + next_exits
+            exits.extend(next_exits)
+    return []
 
 
 def traverse(rooms, player, game_state):
 
-    while len(rooms.keys()) != 500:
+    while True:
         directions = get_directions_to_unseen_room(rooms, player.current_room)
+        if len(directions) == 0:
+            break
+        
+        print(f"\n*** Room count: {len(rooms)}")
+        print(f"Path length: {len(directions)}")
+        path_count = len(directions)
 
         for direction in directions:
-            print(f"Room count: {len(rooms)}")
-            time_now = datetime.now()
-            elapsed_time = time_now - game_state["last_call"]
-            cooldown = max(15, game_state["cooldown"])
-
-            if elapsed_time.seconds < cooldown:
-                delay = cooldown - elapsed_time.seconds
-                time.sleep(delay)
-
             current_room = player.current_room
-            response = explore_new_room(direction[0], direction[1])
-            game_state["last_call"] = datetime.now()
-            game_state["cooldown"] = response["cooldown"]
-            game_state["errors"] = response["errors"]
-            game_state["messages"] = response["messages"]
+            response = debounce(
+                explore_room,
+                game_state,
+                {"direction": direction[0], "room_id": direction[1]},
+            )
 
             room = Room(response)
-            print(f"Current room: {room}")
+            print(f"{path_count} - Current room: {room}")
+            path_count -= 1
             player.travel(room)
             record_move(rooms, room, current_room, direction[0])
 
-            print(game_state)
-            print("------\n")
+            # check for items
+            # for item in response["items"]:
+            #     print("item: ", item)
+            #     response = debounce(examine, game_state, {"name": item})
+            #     response = debounce(pick_item, game_state, {"name": item})
+            #     response = debounce(check_status, game_state)
+
+            # print(game_state)
+            # print("------\n")
 
 
 if __name__ == "__main__":
@@ -89,25 +110,39 @@ if __name__ == "__main__":
 
     # Game State
     # TODO: persist game state in a text file and load upon init
-    game_state = {"last_call": None, "cooldown": None, "errors": None, "messages": None}
+    game_state = {
+        "last_call": datetime.now(),
+        "cooldown": 15,
+        "errors": None,
+        "messages": None,
+    }
 
     # Rooms
-    # TODO: persist room in a text file and load rooms from it
+    loaded_rooms = None
+    with open("room.txt") as json_file:
+        loaded_rooms = json.load(json_file)
+    
     rooms = {}
+    for key, room in loaded_rooms.items():
+        rooms[int(key)] = room
 
-    if len(rooms.keys()) == 0:
+    if len(rooms.keys()) != 0:
+        print(f"There are already {len(rooms)} visited rooms")
+        
+    # Test API - initialize room
+    response = debounce(game_init, game_state)
 
-        # Test API - initialize room
-        response = game_init()
-        game_state["last_call"] = datetime.now()
-        game_state["cooldown"] = response["cooldown"]
-        game_state["errors"] = response["errors"]
-        game_state["messages"] = response["messages"]
+    room = Room(response)
+    print(f"Current room: {room}")
+    player.play(room)
+    record_move(rooms, room)
 
-        room = Room(response)
-        print(room)
-        player.play(room)
-        record_move(rooms, room)
+    # check for items
+    # for item in response["items"]:
+    #     print("item: ", item)
+    #     response = debounce(examine, game_state, {"name": item})
+    #     response = debounce(pick_item, game_state, {"name": item})
+    #     response = debounce(check_status, game_state)
 
     print(f"Please choose running mode:")
     print(f"1 - automatic traversal")
