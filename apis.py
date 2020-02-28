@@ -112,7 +112,8 @@ def pray(**payload):
 def warp(**payload):
     if "bodywear" and "footwear" not in payload:
         raise
-    data = {"bodywear": payload["bodywear"], "footwear": payload["footwear"]}
+    data = {"name": payload["bodywear"]}
+    data = {"name": payload["footwear"]}
 
     try:
         data_payload = json.dumps(data)
