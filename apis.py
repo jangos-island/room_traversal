@@ -100,3 +100,26 @@ def check_status(**payload):
         return response
     except Exception:
         raise
+
+
+def pray(**payload):
+    try:
+        response = requests.post(url=base_url + "/pray", headers=headers).json()
+        return response
+    except Exception:
+        raise
+
+def warp(**payload):
+    if "bodywear" and "footwear" not in payload:
+        raise
+    data = {"bodywear": payload["bodywear"], "footwear": payload["footwear"]}
+
+    try:
+        data_payload = json.dumps(data)
+
+        response = requests.post(
+            url=base_url + "/warp", headers=headers, data=data_payload
+        ).json()
+        return response
+    except Exception:
+        raise
