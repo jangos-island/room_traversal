@@ -63,7 +63,7 @@ if __name__ == '__main__':
         data = r.json()
 
         # need to sleep for 1 second after hitting last proof endpoint
-        print('sleeping 1 sec')
+        print('1 second cooldown for /last_proof')
         time.sleep(1)
 
         new_proof = proof_of_work(data)
@@ -80,5 +80,5 @@ if __name__ == '__main__':
         #     print(data.get('message'))
 
         # cooldown after hitting /mine endpoint
-        print('sleeping 15 sec')
+        print('15 sec cooldown for /mine')
         time.sleep(15)
