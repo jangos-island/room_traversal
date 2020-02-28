@@ -93,10 +93,26 @@ def examine(**payload):
     except Exception:
         raise
 
-
+#status/inventory
 def check_status(**payload):
     try:
         response = requests.post(url=base_url + "/status", headers=headers).json()
         return response
     except Exception:
         raise
+
+#wear item
+def equipItem(equipItem):
+    data = {"name":f"{equipItem}"}
+    response = requests.post(url = base_url + "/wear", headers = headers).json()
+    return data
+#remove item
+def unequipItem(unequipItem):
+    data = {"name":f"{unequipItem}"}
+    response = requests.post(url = base_url + "/undress", headers = headers).json()
+    return data    
+#change name
+def changeName(newName):
+    data = {"name":f"{newName}"}
+    response = requests.post(url = base_url + "/change_name", headers = headers).json()
+    return data 
