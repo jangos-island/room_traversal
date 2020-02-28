@@ -80,6 +80,5 @@ if __name__ == '__main__':
         #     print(data.get('message'))
 
         # cooldown after hitting /mine endpoint
-        # will change this to 15 seconds once we get our names
-        print('sleeping 45 sec')
-        time.sleep(45)
+        print('sleeping 15 sec')
+        time.sleep(15)
