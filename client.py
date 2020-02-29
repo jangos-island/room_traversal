@@ -4,7 +4,7 @@ import json
 from player import Player
 from room import Room
 from apis import game_init
-from utils import debounce, record_move, traverse, repl, work
+from utils import debounce, record_move, traverse, repl, work, mine, change_name
 
 
 if __name__ == "__main__":
@@ -43,6 +43,8 @@ if __name__ == "__main__":
     print(f"1 - automatic traversal")
     print(f"2 - manual")
     print(f"3 - work to find and sell items")
+    print(f"4 - mine for coins")
+    print(f"5 - change name")
     running_mode = int(input())
 
     if running_mode == 1:
@@ -51,3 +53,7 @@ if __name__ == "__main__":
         repl(rooms, player, game_state)
     elif running_mode == 3:
         work(rooms, player, game_state)
+    elif running_mode == 4:
+        mine(rooms, player, game_state)
+    elif change_name == 5:
+        change_name(rooms, player, game_state)

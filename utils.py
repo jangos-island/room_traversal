@@ -6,8 +6,9 @@ from collections import deque
 
 from os import system, name 
 from room import Room
-from apis import explore_room, pick_item, check_status, examine, sell_item
-from time import sleep 
+from apis import explore_room, pick_item, check_status, examine, sell_item, get_last_proof, submit_proof, changeName
+from time import sleep
+from miner import proof_of_work
 
 def clear(): 
     if name == 'nt': 
@@ -26,7 +27,8 @@ notable_rooms = {
     "recall_room": 492,
     "glasowyns_grave": 499,
     "fully_shrine": 374,
-    "aaron": 486
+    "aaron": 486,
+    "mining_room": 427
 }
 
 
@@ -320,3 +322,50 @@ def work(rooms, player, game_state):
                     break
                 else:
                     return
+
+
+def travel_to_room(rooms, player, game_state, roomId):
+    directions = get_closest_path(rooms, player.current_room, roomId)
+    path_count = len(directions)
+    for direction in directions:
+        current_room = player.current_room
+        response = debounce(
+            explore_room,
+            game_state,
+            {"direction": direction[0], "room_id": direction[1]},
+        )
+
+        room = Room(response)
+        print(f"{path_count} - Current room: {room}")
+        path_count -= 1
+        player.travel(room)
+
+def mine(rooms, player, game_state):
+    travel_to_room(rooms, player, game_state, notable_rooms["wishing_well"])
+    response = debounce(examine, game_state, {"name": "WELL"})
+
+    message = response["description"].split('\n')[2:]
+    numbers = [int(str, 2) for str in message]
+    print(numbers)
+
+    # travel_to_room(rooms, player, game_state, notable_rooms["mining_room"])
+
+    # while True:
+    #     # work for a proof
+    #     last_proof = debounce(get_last_proof, game_state)
+    #     new_proof = proof_of_work(last_proof)
+    #     print(new_proof)
+
+    #     # mine a coin 
+    #     response = debounce(submit_proof, game_state, {"proof": new_proof})
+    #     print(response)
+
+
+def change_name(rooms, player, game_state):
+    travel_to_room(rooms, player, game_state, notable_rooms["pirate_ry"])
+    name = input("Type in Your Name :")
+
+    response = debounce(changeName, game_state, {"name": name})
+    print(json.dump(response, indent=2))
+
+
