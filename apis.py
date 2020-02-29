@@ -214,3 +214,9 @@ def submit_proof(**payload):
     except Exception:
         raise
 
+def get_balance(**payload):
+    try:
+        response = requests.get(url=mine_url + "/get_balance", headers=headers).json()
+        return response
+    except Exception:
+        raise

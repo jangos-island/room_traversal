@@ -6,7 +6,7 @@ from collections import deque
 
 from os import system, name 
 from room import Room
-from apis import explore_room, pick_item, check_status, examine, sell_item, get_last_proof, submit_proof, changeName, confirmName
+from apis import explore_room, pick_item, check_status, examine, sell_item, get_last_proof, submit_proof, changeName, confirmName, get_balance
 from time import sleep
 from miner import proof_of_work
 
@@ -28,7 +28,7 @@ notable_rooms = {
     "glasowyns_grave": 499,
     "fully_shrine": 374,
     "aaron": 486,
-    "mining_room": 427
+    "mining_room": 3
 }
 
 
@@ -336,29 +336,40 @@ def travel_to_room(rooms, player, game_state, roomId):
         )
 
         room = Room(response)
-        print(f"{path_count} - Current room: {room}")
+        print(f"\n{path_count} rooms away to destination room. Currently in: {room}")
         path_count -= 1
         player.travel(room)
 
 def mine(rooms, player, game_state):
-    travel_to_room(rooms, player, game_state, notable_rooms["wishing_well"])
-    response = debounce(examine, game_state, {"name": "WELL"})
+    while True:
+        print(f"\nTravel to the wishing well...")
+        travel_to_room(rooms, player, game_state, notable_rooms["wishing_well"])
+        response = debounce(examine, game_state, {"name": "WELL"})
 
-    message = response["description"].split('\n')[2:]
-    numbers = [int(str, 2) for str in message]
-    print(numbers)
+        message = response["description"]
+        room_number = int(message[message.rfind(' ') + 1:])
+        
+        print(f"\nThe next room to mine: {room_number}\n")
+        travel_to_room(rooms, player, game_state, room_number)
 
-    # travel_to_room(rooms, player, game_state, notable_rooms["mining_room"])
+        has_mine = False
+        while not has_mine:
+            # work for a proof
+            last_proof = debounce(get_last_proof, game_state)
+            new_proof = proof_of_work(last_proof)
 
-    # while True:
-    #     # work for a proof
-    #     last_proof = debounce(get_last_proof, game_state)
-    #     new_proof = proof_of_work(last_proof)
-    #     print(new_proof)
+            # mine a coin 
+            print(f"Submitting proof: {new_proof}")
+            response = debounce(submit_proof, game_state, {"proof": new_proof})
+            print(json.dumps(response, indent=2))
 
-    #     # mine a coin 
-    #     response = debounce(submit_proof, game_state, {"proof": new_proof})
-    #     print(response)
+            if "messages" in response:
+                has_mine = "New Block Forged" in response["messages"]
+
+                if has_mine:
+                    response = debounce(get_balance, game_state)
+                    print('\n\n Balance:')
+                    print(json.dumps(response, indent=2))
 
 
 def change_name(rooms, player, game_state):
