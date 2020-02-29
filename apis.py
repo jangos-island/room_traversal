@@ -149,3 +149,20 @@ def changeName(newName):
     data = {"name":f"{newName}"}
     response = requests.post(url = base_url + "/change_name", headers = headers).json()
     return data 
+def sell_item(**payload):
+    if "name" not in payload:
+        return
+    data = {
+        "name": payload["name"]
+    }
+    if "confirm" in payload:
+        data["confirm"] = payload["confirm"]
+    
+    try:
+        data_json = json.dumps(data)
+        response = requests.post(
+            url=base_url + "/sell", headers=headers, data=data_json
+        ).json()
+        return response
+    except Exception:
+        raise

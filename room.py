@@ -10,7 +10,7 @@ class Room:
         self.terrain = room["terrain"]
 
     def __str__(self):
-        return f"\n{self.id} - {self.title}"
+        return f"\n{self.id} - {self.title}\n{self.description} \n{self.exits}"
 
     def print_room_description(self):
         return f"\n{self.description}"
