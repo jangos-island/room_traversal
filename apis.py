@@ -156,7 +156,7 @@ def changeName(**payload):
         data_json = json.dumps(data)
         response = requests.post(url = base_url + "/change_name", headers = headers, data=data_json).json()
         
-        data["confirm"] = "yes"
+        data["confirm"] = "aye"
         data_json = json.dumps(data)
         response = requests.post(url = base_url + "/change_name", headers = headers, data=data_json).json()
         return response

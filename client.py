@@ -55,5 +55,5 @@ if __name__ == "__main__":
         work(rooms, player, game_state)
     elif running_mode == 4:
         mine(rooms, player, game_state)
-    elif change_name == 5:
+    elif running_mode == 5:
         change_name(rooms, player, game_state)

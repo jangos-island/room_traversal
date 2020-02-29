@@ -366,6 +366,6 @@ def change_name(rooms, player, game_state):
     name = input("Type in Your Name :")
 
     response = debounce(changeName, game_state, {"name": name})
-    print(json.dump(response, indent=2))
+    print(json.dumps(response, indent=2))
 
 
