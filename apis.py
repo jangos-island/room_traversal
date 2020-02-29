@@ -100,3 +100,21 @@ def check_status(**payload):
         return response
     except Exception:
         raise
+
+def sell_item(**payload):
+    if "name" not in payload:
+        return
+    data = {
+        "name": payload["name"]
+    }
+    if "confirm" in payload:
+        data["confirm"] = payload["confirm"]
+    
+    try:
+        data_json = json.dumps(data)
+        response = requests.post(
+            url=base_url + "/sell", headers=headers, data=data_json
+        ).json()
+        return response
+    except Exception:
+        raise

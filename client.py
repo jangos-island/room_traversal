@@ -4,15 +4,13 @@ import json
 from player import Player
 from room import Room
 from apis import game_init
-from utils import debounce, record_move, traverse
+from utils import debounce, record_move, traverse, repl, work
 
 
 if __name__ == "__main__":
-    # Create a player with token
     player = Player()
 
     # Game State
-    # TODO: persist game state in a text file and load upon init
     game_state = {
         "last_call": datetime.now(),
         "cooldown": 15,
@@ -20,7 +18,7 @@ if __name__ == "__main__":
         "messages": None,
     }
 
-    # Rooms
+    # Load Rooms
     loaded_rooms = None
     with open("room.txt") as json_file:
         loaded_rooms = json.load(json_file)
@@ -32,7 +30,7 @@ if __name__ == "__main__":
     if len(rooms.keys()) != 0:
         print(f"There are already {len(rooms)} visited rooms")
         
-    # Test API - initialize room
+    # Initialize the Game
     response = debounce(game_init, game_state)
 
     room = Room(response)
@@ -40,13 +38,16 @@ if __name__ == "__main__":
     player.play(room)
     record_move(rooms, room)
 
+    # Game Mode
     print(f"Please choose running mode:")
     print(f"1 - automatic traversal")
     print(f"2 - manual")
-
+    print(f"3 - work to find and sell items")
     running_mode = int(input())
 
     if running_mode == 1:
         traverse(rooms, player, game_state)
     elif running_mode == 2:
-        print(f"manual mode")
+        repl(rooms, player, game_state)
+    elif running_mode == 3:
+        work(rooms, player, game_state)
