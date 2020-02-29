@@ -6,7 +6,7 @@ from collections import deque
 
 from os import system, name 
 from room import Room
-from apis import explore_room, pick_item, check_status, examine, sell_item, get_last_proof, submit_proof, changeName
+from apis import explore_room, pick_item, check_status, examine, sell_item, get_last_proof, submit_proof, changeName, confirmName
 from time import sleep
 from miner import proof_of_work
 
@@ -366,6 +366,5 @@ def change_name(rooms, player, game_state):
     name = input("Type in Your Name :")
 
     response = debounce(changeName, game_state, {"name": name})
+    response = debounce(confirmName, game_state, {"name": name})
     print(json.dumps(response, indent=2))
-
-
