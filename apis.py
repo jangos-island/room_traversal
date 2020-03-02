@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 base_url = "https://lambda-treasure-hunt.herokuapp.com/api/adv"
+mine_url = "https://lambda-treasure-hunt.herokuapp.com/api/bc"
 expected_room_response = [
     "room_id",
     "title",
@@ -145,7 +146,77 @@ def unequipItem(unequipItem):
     response = requests.post(url = base_url + "/undress", headers = headers).json()
     return data    
 #change name
-def changeName(newName):
-    data = {"name":f"{newName}"}
-    response = requests.post(url = base_url + "/change_name", headers = headers).json()
-    return data 
+def changeName(**payload):
+    if "name" not in payload:
+        print("invalid name")
+        return    
+    data = {"name": payload["name"]}
+
+    try:
+        data_json = json.dumps(data)
+        response = requests.post(url = base_url + "/change_name", headers = headers, data=data_json).json()
+        return response
+    except Exception:
+        raise
+
+def confirmName(**payload):
+    if "name" not in payload:
+        print("invalid name")
+        return    
+    data = {"name": payload["name"], "confirm": "aye"}
+
+    try:
+        data_json = json.dumps(data)
+        response = requests.post(url = base_url + "/change_name", headers = headers, data=data_json).json()
+        return response
+    except Exception:
+        raise
+
+def sell_item(**payload):
+    if "name" not in payload:
+        return
+    data = {
+        "name": payload["name"]
+    }
+    if "confirm" in payload:
+        data["confirm"] = payload["confirm"]
+    
+    try:
+        data_json = json.dumps(data)
+        response = requests.post(
+            url=base_url + "/sell", headers=headers, data=data_json
+        ).json()
+        return response
+    except Exception:
+        raise
+
+
+def get_last_proof(**payload):
+    try:
+        response = requests.get(url=mine_url + "/last_proof", headers=headers).json()
+        return response
+    except Exception:
+        raise
+
+def submit_proof(**payload):
+    if "proof" not in payload:
+        print("Missing proof")
+        return
+
+    data = {
+        "proof": payload["proof"]
+    }
+
+    try:
+        data_json = json.dumps(data)
+        response = requests.post(url=mine_url + "/mine", headers=headers, data=data_json).json()
+        return response
+    except Exception:
+        raise
+
+def get_balance(**payload):
+    try:
+        response = requests.get(url=mine_url + "/get_balance", headers=headers).json()
+        return response
+    except Exception:
+        raise

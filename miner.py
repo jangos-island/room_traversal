@@ -26,7 +26,7 @@ def proof_of_work(data):
     last_proof = data["proof"]
     difficulty = data["difficulty"]
     # start at a random point
-    proof = last_proof * random.randint(0, 100)
+    proof = last_proof
 
     while valid_proof(last_proof, difficulty, proof) is False:
         proof += 1
