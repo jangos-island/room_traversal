@@ -28,6 +28,7 @@ notable_rooms = {
     "glasowyns_grave": 499,
     "fully_shrine": 374,
     "aaron": 486,
+    "the_transmogriphier" : 495,
     "mining_room": 3
 }
 
