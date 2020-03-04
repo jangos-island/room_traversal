@@ -27,7 +27,7 @@ notable_rooms = {
     "recall_room": 492,
     "glasowyns_grave": 499,
     "fully_shrine": 374,
-    "aaron": 486,
+    "arron": 486,
     "mining_room": 3
 }
 
@@ -197,7 +197,7 @@ def repl(rooms, player, game_state):
         elif choice == 34:
             travel(rooms, player, game_state, "e")
         elif choice == 41:
-            directions = get_closest_path(rooms, player.current_room, notable_rooms["aaron"])
+            directions = get_closest_path(rooms, player.current_room, notable_rooms["arron"])
             path_count = len(directions)
             for direction in directions:
                 current_room = player.current_room
